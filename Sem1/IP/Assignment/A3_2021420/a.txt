@@ -1,0 +1,2 @@
+2022-04-09 12:39:21.695370 The amount of Rs. 100 has been added 	Current Balance: Rs. 1100
+2022-04-09 12:39:30.603794 The amount of Rs. 200 has been debited 	Current Balance: Rs. 900
