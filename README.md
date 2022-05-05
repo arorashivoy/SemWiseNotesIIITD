@@ -18,7 +18,7 @@ This is the Repository for my notes and some resources that I used for each seme
 **My Notes:** [LA_Notes](Sem1/LA/Propositions.pdf)\
 **My Tutorials:** [Tutorials](Sem1/LA/Tuts/)\
 **Book:** [Linear Algebra and its applications](Sem1/LA/LinearAlgebra.pdf)\
-&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Solutions](Sem1/LA/LinearAlgebraSol.pdf)
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;[Solutions](Sem1/LA/LinearAlgebraSol.pdf)
 
 **Links:**
 * [MIT CourseWare](https://www.youtube.com/watch?v=ZK3O402wf1c&list=PL49CF3715CB9EF31D&index=5)
