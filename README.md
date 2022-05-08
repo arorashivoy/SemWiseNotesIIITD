@@ -19,7 +19,7 @@ This is the Repository for my notes and some resources that I used for each seme
 > Also download the [Proofs folder](Sem1/LA/Proofs/) and keep it in the same directory as the Notes .pdf since the notes contains some links that will open files from that folder like proof of the propositions and theorems
 
 
-> [Download](Sem1/LA/Notes.zip) the .zip file to get the whole thing
+> [Download](https://drive.google.com/file/d/18OQldogOw1L61-ZgVbsp2tLR8Ef1OjZk/view?usp=sharing) the .zip file to get the Notes with all the associated things
 
 **My Tutorials:** [Tutorials](Sem1/LA/Tuts/)\
 **Book:** [Linear Algebra and its applications](Sem1/LA/LinearAlgebra.pdf)\
