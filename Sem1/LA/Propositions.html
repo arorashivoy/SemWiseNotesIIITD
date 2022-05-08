@@ -1,0 +1,1358 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>no title</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    .markdown-preview{width:100%;height:100%;box-sizing:border-box}.markdown-preview .pagebreak,.markdown-preview .newpage{page-break-before:always}.markdown-preview pre.line-numbers{position:relative;padding-left:3.8em;counter-reset:linenumber}.markdown-preview pre.line-numbers>code{position:relative}.markdown-preview pre.line-numbers .line-numbers-rows{position:absolute;pointer-events:none;top:1em;font-size:100%;left:0;width:3em;letter-spacing:-1px;border-right:1px solid #999;-webkit-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}.markdown-preview pre.line-numbers .line-numbers-rows>span{pointer-events:none;display:block;counter-increment:linenumber}.markdown-preview pre.line-numbers .line-numbers-rows>span:before{content:counter(linenumber);color:#999;display:block;padding-right:.8em;text-align:right}.markdown-preview .mathjax-exps .MathJax_Display{text-align:center !important}.markdown-preview:not([for="preview"]) .code-chunk .btn-group{display:none}.markdown-preview:not([for="preview"]) .code-chunk .status{display:none}.markdown-preview:not([for="preview"]) .code-chunk .output-div{margin-bottom:16px}.scrollbar-style::-webkit-scrollbar{width:8px}.scrollbar-style::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}.scrollbar-style::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode]){position:relative;width:100%;height:100%;top:0;left:0;margin:0;padding:0;overflow:auto}html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{position:relative;top:0}@media screen and (min-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em calc(50% - 457px + 2em)}}@media screen and (max-width:914px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode]) .markdown-preview{font-size:14px !important;padding:1em}}@media print{html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{display:none}}html body[for="html-export"]:not([data-presentation-mode]) #sidebar-toc-btn{position:fixed;bottom:8px;left:8px;font-size:28px;cursor:pointer;color:inherit;z-index:99;width:32px;text-align:center;opacity:.4}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] #sidebar-toc-btn{opacity:1}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc{position:fixed;top:0;left:0;width:300px;height:100%;padding:32px 0 48px 0;font-size:14px;box-shadow:0 0 4px rgba(150,150,150,0.33);box-sizing:border-box;overflow:auto;background-color:inherit}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar{width:8px}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-track{border-radius:10px;background-color:transparent}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc::-webkit-scrollbar-thumb{border-radius:5px;background-color:rgba(150,150,150,0.66);border:4px solid rgba(150,150,150,0.66);background-clip:content-box}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc a{text-decoration:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{padding:0 1.6em;margin-top:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc li{margin-bottom:.8em}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .md-sidebar-toc ul{list-style-type:none}html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{left:300px;width:calc(100% -  300px);padding:2em calc(50% - 457px -  150px);margin:0;box-sizing:border-box}@media screen and (max-width:1274px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{padding:2em}}@media screen and (max-width:450px){html body[for="html-export"]:not([data-presentation-mode])[html-show-sidebar-toc] .markdown-preview{width:100%}}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .markdown-preview{left:50%;transform:translateX(-50%)}html body[for="html-export"]:not([data-presentation-mode]):not([html-show-sidebar-toc]) .md-sidebar-toc{display:none}pre{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;direction:ltr;text-align:left;white-space:pre;word-spacing:normal;word-break:normal;padding:1em;margin:.5em 0;overflow:auto;line-height:1.5;tab-size:4;hyphens:none;color:#c5c8c6;background-color:#27292c !important;border:#43484c;border-radius:3px}pre[class*="language-"]{padding:1em}code[class*="language-"] .token.comment,pre[class*="language-"] .token.comment,code[class*="language-"] .token.prolog,pre[class*="language-"] .token.prolog,code[class*="language-"] .token.doctype,pre[class*="language-"] .token.doctype,code[class*="language-"] .token.cdata,pre[class*="language-"] .token.cdata{color:#7C7C7C}code[class*="language-"] .token.punctuation,pre[class*="language-"] .token.punctuation{color:#96CBFE}code[class*="language-"] .namespace,pre[class*="language-"] .namespace{opacity:.7}code[class*="language-"] .token.constant,pre[class*="language-"] .token.constant{color:#99CC99}code[class*="language-"] .token.boolean,pre[class*="language-"] .token.boolean,code[class*="language-"] .token.number,pre[class*="language-"] .token.number,code[class*="language-"] .token.function-name,pre[class*="language-"] .token.function-name{color:#FF73FD}code[class*="language-"] .token.tag,pre[class*="language-"] .token.tag{color:#96CBFE}code[class*="language-"] .token.selector,pre[class*="language-"] .token.selector{color:#96CBFE}code[class*="language-"] .token.attr-name,pre[class*="language-"] .token.attr-name{color:#C6C5FE}code[class*="language-"] .token.string,pre[class*="language-"] .token.string{color:#A8FF60}code[class*="language-"] .token.char,pre[class*="language-"] .token.char{color:#FF8000}code[class*="language-"] .token.entity,pre[class*="language-"] .token.entity{color:#FFD2A7}code[class*="language-"] .token.url,pre[class*="language-"] .token.url{color:#7C7C7C}code[class*="language-"] .token.operator,pre[class*="language-"] .token.operator{color:#EDEDED}code[class*="language-"] .token.atrule,pre[class*="language-"] .token.atrule,code[class*="language-"] .token.attr-value,pre[class*="language-"] .token.attr-value,code[class*="language-"] .token.keyword,pre[class*="language-"] .token.keyword{color:#CFCB90}code[class*="language-"] .token.function,pre[class*="language-"] .token.function{color:#FFD2A7}code[class*="language-"] .token.class-name,pre[class*="language-"] .token.class-name{color:#FFD2A7}code[class*="language-"] .token.variable,pre[class*="language-"] .token.variable{color:#C6C5FE}code[class*="language-"] .token.regex,pre[class*="language-"] .token.regex,code[class*="language-"] .token.important,pre[class*="language-"] .token.important{color:#E9C062}code[class*="language-"] .token.important,pre[class*="language-"] .token.important,code[class*="language-"] .token.bold,pre[class*="language-"] .token.bold{font-weight:bold}code[class*="language-"] .token.italic,pre[class*="language-"] .token.italic{font-style:italic}code[class*="language-"] .token.entity,pre[class*="language-"] .token.entity{cursor:help}pre[data-line]{position:relative;padding:1em 0 1em 3em}pre[data-line] .line-highlight-wrapper{position:absolute;top:0;left:0;background-color:transparent;display:block;width:100%}pre[data-line] .line-highlight{position:absolute;left:0;right:0;padding:inherit 0;margin-top:1em;background:rgba(153,122,102,0.08);background:linear-gradient(to right, rgba(153,122,102,0.1) 70%, rgba(153,122,102,0));pointer-events:none;line-height:inherit;white-space:pre}pre[data-line] .line-highlight:before,pre[data-line] .line-highlight[data-end]:after{content:attr(data-start);position:absolute;top:.4em;left:.6em;min-width:1em;padding:0 .5em;background-color:rgba(153,122,102,0.4);color:#f5f2f0;font:bold 65%/1.5 sans-serif;text-align:center;vertical-align:.3em;border-radius:999px;text-shadow:none;box-shadow:0 1px white}pre[data-line] .line-highlight[data-end]:after{content:attr(data-end);top:auto;bottom:.4em}.emoji {
+  height: 0.8em;
+}html body{font-family:"Helvetica Neue",Helvetica,"Segoe UI",Arial,freesans,sans-serif;font-size:16px;line-height:1.6;color:#ccc;background-color:#141414;overflow:initial;box-sizing:border-box;word-wrap:break-word}html body>:first-child{margin-top:0}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{line-height:1.2;margin-top:1em;margin-bottom:16px;color:#fff}html body h1{font-size:2.25em;font-weight:300;padding-bottom:.3em}html body h2{font-size:1.75em;font-weight:400;padding-bottom:.3em}html body h3{font-size:1.5em;font-weight:500}html body h4{font-size:1.25em;font-weight:600}html body h5{font-size:1.1em;font-weight:600}html body h6{font-size:1em;font-weight:600}html body h1,html body h2,html body h3,html body h4,html body h5{font-weight:600}html body h5{font-size:1em}html body h6{color:#a3a3a3}html body strong{color:#fff}html body del{color:#a3a3a3}html body a:not([href]){color:inherit;text-decoration:none}html body a{color:#08c;text-decoration:none}html body a:hover{color:#00a3f5;text-decoration:none}html body img{max-width:100%}html body>p{margin-top:0;margin-bottom:16px;word-wrap:break-word}html body>ul,html body>ol{margin-bottom:16px}html body ul,html body ol{padding-left:2em}html body ul.no-list,html body ol.no-list{padding:0;list-style-type:none}html body ul ul,html body ul ol,html body ol ol,html body ol ul{margin-top:0;margin-bottom:0}html body li{margin-bottom:0}html body li.task-list-item{list-style:none}html body li>p{margin-top:0;margin-bottom:0}html body .task-list-item-checkbox{margin:0 .2em .25em -1.8em;vertical-align:middle}html body .task-list-item-checkbox:hover{cursor:pointer}html body blockquote{margin:16px 0;font-size:inherit;padding:0 15px;color:#a3a3a3;background-color:#282828;border-left:4px solid #3d3d3d}html body blockquote>:first-child{margin-top:0}html body blockquote>:last-child{margin-bottom:0}html body hr{height:4px;margin:32px 0;background-color:#3d3d3d;border:0 none}html body table{margin:10px 0 15px 0;border-collapse:collapse;border-spacing:0;display:block;width:100%;overflow:auto;word-break:normal;word-break:keep-all}html body table th{font-weight:bold;color:#fff}html body table td,html body table th{border:1px solid #3d3d3d;padding:6px 13px}html body dl{padding:0}html body dl dt{padding:0;margin-top:16px;font-size:1em;font-style:italic;font-weight:bold}html body dl dd{padding:0 16px;margin-bottom:16px}html body code{font-family:Menlo,Monaco,Consolas,'Courier New',monospace;font-size:.85em !important;color:#fff;background-color:#282828;border-radius:3px;padding:.2em 0}html body code::before,html body code::after{letter-spacing:-0.2em;content:"\00a0"}html body pre>code{padding:0;margin:0;font-size:.85em !important;word-break:normal;white-space:pre;background:transparent;border:0}html body .highlight{margin-bottom:16px}html body .highlight pre,html body pre{padding:1em;overflow:auto;font-size:.85em !important;line-height:1.45;border:#3d3d3d;border-radius:3px}html body .highlight pre{margin-bottom:0;word-break:normal}html body pre code,html body pre tt{display:inline;max-width:initial;padding:0;margin:0;overflow:initial;line-height:inherit;word-wrap:normal;background-color:transparent;border:0}html body pre code:before,html body pre tt:before,html body pre code:after,html body pre tt:after{content:normal}html body p,html body blockquote,html body ul,html body ol,html body dl,html body pre{margin-top:0;margin-bottom:16px}html body kbd{color:#fff;border:1px solid #3d3d3d;border-bottom:2px solid #2e2e2e;padding:2px 4px;background-color:#282828;border-radius:3px}@media print{html body{background-color:#141414}html body h1,html body h2,html body h3,html body h4,html body h5,html body h6{color:#fff;page-break-after:avoid}html body blockquote{color:#a3a3a3}html body pre{page-break-inside:avoid}html body table{display:table}html body img{display:block;max-width:100%;max-height:100%}html body pre,html body code{word-wrap:break-word;white-space:pre}}@font-face {
+  font-family: "Material Icons";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Material Icons"), local("MaterialIcons-Regular"), url("data:application/x-font-woff;charset=utf-8;base64,d09GRgABAAAAAAfIAAsAAAAADDAAAQAAAAAAAAAAAAAAAAAAAAAAAAAAAABHU1VCAAABCAAAADMAAABCsP6z7U9TLzIAAAE8AAAARAAAAFZW7kosY21hcAAAAYAAAADTAAACjtP6ytBnbHlmAAACVAAAAxgAAAQ4zRtvlGhlYWQAAAVsAAAALwAAADYRwZsnaGhlYQAABZwAAAAcAAAAJAeKAzxobXR4AAAFuAAAABIAAAA8OGQAAGxvY2EAAAXMAAAAIAAAACAG5AfwbWF4cAAABewAAAAfAAAAIAEfAERuYW1lAAAGDAAAAVcAAAKFkAhoC3Bvc3QAAAdkAAAAYgAAAK2vz7wkeJxjYGRgYOBikGPQYWB0cfMJYeBgYGGAAJAMY05meiJQDMoDyrGAaQ4gZoOIAgCKIwNPAHicY2BkPsQ4gYGVgYOpk+kMAwNDP4RmfM1gxMjBwMDEwMrMgBUEpLmmMDgwVLy4xKzzX4chhrmK4QpQmBEkBwAZygyweJzFkr0NwjAQhZ+TEP6CRUfHBEwRUWaQTICyQbpMwRCskA5RUIONxG0RnnNpKAIV4qzPku/8c353ACYAYrIjCWCuMAh2ptf0/hiL3p/gyPUWa3osqlt0L1zu9r71z8dGrJRykFoauXQd932Lj5vhG+MjxGeYI8MKETObMpslf5EyP8tg+vHun5r539PvlvXzaVhRFVQDTPEWKVQR90KhnnC5Ek67vUKN4VuFasM/ldARj43CCkCsEjpJSoVVgRyU0GVSK6wUpFFCx8lFgX0BiXpRPQB4nE2TTWjcRhTH3xttpDhxN7uxPlp3u/FK7moRPixafRijNosxSw/LUsIwNcaEHPZggo/FmEKMCKWU4kNOOftQSlhE8alnH0Ix9BqWnHooPRrTQ0+mnu2bXTu2pPdGM9LM/6c3fwECTM4gBBMYQNqxzLrZAjqYSlqu2TAHZQA0/DQJH6FtzqGDnvbt4Ggwvzw/nL8EfH8kW0fsuRqhgWXZnY7M1picaUL7Du5BHeDzMIl83dAt016wH1qmvtSMo5R6YRJHTR//FXsff/nj/tc/5K9P5d+nP22+fFK5u7v3K39SW3y+OtDKO3L85vD09PD9z5X17a2N1g4tqk01RlqX7gyoEmnsWQtVr4rtZMmukEaFBZxzefkCn11cyKMLZgshRwgTYNoLNXCBz2ja7HvZG7hDpPSNfoo5vs0knK/9hb+rNpu+8kHPgk/Ao4kK3tWtTpSEtvkA9c+wE6UaUdwieNkaHg55tBEtRiEPw1s0+FtrtTcc9two2lhMknV7PZF/cs6+uUFTmpTGbEx7sQCPSLOttHS3GRltqp7SNzVSKzl6aWnZT/CX5k6/v9N3Hh8fHBwffJVjhrC6OgH5dkIt/tPsq+d/PD5Qz7G7efzq1THFjdZVPe/N6ulQ3JnDWSE5junsFsVIiFwL/htf1S5gJ3BfOcUxfHKLnzqpFpyfZ9cX+/5WB6a+Y0pHpzkNrYNVDwMsikK+y7WuLCRg/oFHkA8VT3rDg5ZnU6ktzzINymV0m74Xd5pfIGXyFeVEQSShkzqG7TBBa2OxVRKitLXv7h3uuftXnXq7lz2tZ/WnWa9dx9dCjDhHzmuVQATlmljr9dZErUydSo2Hbi/b1vXtrOeGCk2/8s3ZlO8+ueJT8BVlw5pGw2oYccdSiHHqx0RlabHqdNR9jAETl6PreJcPBnnfpTLnOQ8C3OV8AmQGzouV1iZdeb5SSIoVc8W8/kcDtksUH5FrU6/aqBqNWcMEzxG4DAQ14qRQhi9mWU0rzepKezbjfgCwQKxVYq5ajRgpRqy45CqwkJydcEkbTkvRz8P5/2ZpDTN4nGNgZGBgAOKb6v+/xvPbfGXgZmEAgeuB2kkI+v8bFgbmKiCXg4EJJAoAPyAKhQB4nGNgZGBg1vmvwxDDwgACQJKRARXwAwAzZQHQeJxjYQCCFAYGFgbSMQAcWACdAAAAAAAAAAwALgBgAIQAmADSAQgBIgE8AVABoAHeAfwCHHicY2BkYGDgZ7BgYGMAASYg5gJCBob/YD4DAA/hAWQAeJxlkbtuwkAURMc88gApQomUJoq0TdIQzEOpUDokKCNR0BuzBiO/tF6QSJcPyHflE9Klyyekz2CuG8cr7547M3d9JQO4xjccnJ57vid2cMHqxDWc40G4Tv1JuEF+Fm6ijRfhM+oz4Ra6eBVu4wZvvMFpXLIa40PYQQefwjVc4Uu4Tv1HuEH+FW7i1mkKn6Hj3Am3sHC6wm08Ou8tpSZGe1av1PKggjSxPd8zJtSGTuinyVGa6/Uu8kxZludCmzxMEzV0B6U004k25W35fj2yNlCBSWM1paujKFWZSbfat+7G2mzc7weiu34aczzFNYGBhgfLfcV6iQP3ACkSaj349AxXSN9IT0j16JepOb01doiKbNWt1ovippz6sVYYwsXgX2rGVFIkq7Pl2PNrI6qW6eOshj0xaSq9mpNEZIWs8LZUfOouNkVXxp/d5woqebeYIf4D2J1ywQB4nG3LOw6AIBAE0B384B+PAkgEa+QwNnYmHt+EpXSal5lkSBBnoP8oCFSo0aCFRIceA0ZMmLFAYSW88rmvtMUjG3RiQ9HvpfusM6zWNmtc5H/iPewha50tOt5PS/QBx2IeSwAA") format("woff");
+}
+
+.admonition {
+  box-shadow: 0 2px 2px 0 rgba(0, 0, 0, .14), 0 1px 5px 0 rgba(0, 0, 0, .12), 0 3px 1px -2px rgba(0, 0, 0, .2);
+  position: relative;
+  margin: 1.5625em 0;
+  padding: 0 1.2rem;
+  border-left: .4rem solid rgba(68, 138, 255, .8);
+  border-radius: .2rem;
+  background-color: rgba(255, 255, 255, 0.05);
+  overflow: auto;
+}
+
+.admonition>p {
+  margin-top: .8rem;
+}
+
+.admonition>.admonition-title {
+  margin: 0 -1.2rem;
+  padding: .8rem 1.2rem .8rem 3.6rem;
+  border-bottom: 1px solid rgba(68, 138, 255, .2);
+  background-color: rgba(68, 138, 255, .1);
+  font-weight: 700;
+}
+
+.admonition>.admonition-title:before {
+  position: absolute;
+  left: 1.2rem;
+  font-size: 1.5rem;
+  color: rgba(68, 138, 255, .8);
+  content: "\E3C9";
+}
+
+.admonition>.admonition-title:before {
+  font-family: Material Icons;
+  font-style: normal;
+  font-variant: normal;
+  font-weight: 400;
+  line-height: 2rem;
+  text-transform: none;
+  white-space: nowrap;
+  speak: none;
+  word-wrap: normal;
+  direction: ltr;
+}
+
+.admonition.summary,
+.admonition.abstract,
+.admonition.tldr {
+  border-left-color: rgba(0, 176, 255, .8);
+}
+
+.admonition.summary>.admonition-title,
+.admonition.abstract>.admonition-title,
+.admonition.tldr>.admonition-title {
+  background-color: rgba(0, 176, 255, .1);
+  border-bottom-color: rgba(0, 176, 255, .2);
+}
+
+.admonition.summary>.admonition-title:before,
+.admonition.abstract>.admonition-title:before,
+.admonition.tldr>.admonition-title:before {
+  color: rgba(0, 176, 255, 1);
+  ;
+  content: "\E8D2";
+}
+
+.admonition.hint,
+.admonition.tip {
+  border-left-color: rgba(0, 191, 165, .8);
+}
+
+.admonition.hint>.admonition-title,
+.admonition.tip>.admonition-title {
+  background-color: rgba(0, 191, 165, .1);
+  border-bottom-color: rgba(0, 191, 165, .2);
+}
+
+.admonition.hint>.admonition-title:before,
+.admonition.tip>.admonition-title:before {
+  color: rgba(0, 191, 165, 1);
+  content: "\E80E";
+}
+
+.admonition.info,
+.admonition.todo {
+  border-left-color: rgba(0, 184, 212, .8);
+}
+
+.admonition.info>.admonition-title,
+.admonition.todo>.admonition-title {
+  background-color: rgba(0, 184, 212, .1);
+  border-bottom-color: rgba(0, 184, 212, .2);
+}
+
+.admonition.info>.admonition-title:before,
+.admonition.todo>.admonition-title:before {
+  color: rgba(0, 184, 212, 1);
+  ;
+  content: "\E88E";
+}
+
+.admonition.success,
+.admonition.check,
+.admonition.done {
+  border-left-color: rgba(0, 200, 83, .8);
+}
+
+.admonition.success>.admonition-title,
+.admonition.check>.admonition-title,
+.admonition.done>.admonition-title {
+  background-color: rgba(0, 200, 83, .1);
+  border-bottom-color: rgba(0, 200, 83, .2);
+}
+
+.admonition.success>.admonition-title:before,
+.admonition.check>.admonition-title:before,
+.admonition.done>.admonition-title:before {
+  color: rgba(0, 200, 83, 1);
+  ;
+  content: "\E876";
+}
+
+.admonition.question,
+.admonition.help,
+.admonition.faq {
+  border-left-color: rgba(100, 221, 23, .8);
+}
+
+.admonition.question>.admonition-title,
+.admonition.help>.admonition-title,
+.admonition.faq>.admonition-title {
+  background-color: rgba(100, 221, 23, .1);
+  border-bottom-color: rgba(100, 221, 23, .2);
+}
+
+.admonition.question>.admonition-title:before,
+.admonition.help>.admonition-title:before,
+.admonition.faq>.admonition-title:before {
+  color: rgba(100, 221, 23, 1);
+  ;
+  content: "\E887";
+}
+
+.admonition.warning,
+.admonition.attention,
+.admonition.caution {
+  border-left-color: rgba(255, 145, 0, .8);
+}
+
+.admonition.warning>.admonition-title,
+.admonition.attention>.admonition-title,
+.admonition.caution>.admonition-title {
+  background-color: rgba(255, 145, 0, .1);
+  border-bottom-color: rgba(255, 145, 0, .2);
+}
+
+.admonition.attention>.admonition-title:before {
+  color: rgba(255, 145, 0, 1);
+  content: "\E417";
+}
+
+.admonition.warning>.admonition-title:before,
+.admonition.caution>.admonition-title:before {
+  color: rgba(255, 145, 0, 1);
+  content: "\E002";
+}
+
+.admonition.failure,
+.admonition.fail,
+.admonition.missing {
+  border-left-color: rgba(255, 82, 82, .8);
+}
+
+.admonition.failure>.admonition-title,
+.admonition.fail>.admonition-title,
+.admonition.missing>.admonition-title {
+  background-color: rgba(255, 82, 82, .1);
+  border-bottom-color: rgba(255, 82, 82, .2);
+}
+
+.admonition.failure>.admonition-title:before,
+.admonition.fail>.admonition-title:before,
+.admonition.missing>.admonition-title:before {
+  color: rgba(255, 82, 82, 1);
+  ;
+  content: "\E14C";
+}
+
+.admonition.danger,
+.admonition.error,
+.admonition.bug {
+  border-left-color: rgba(255, 23, 68, .8);
+}
+
+.admonition.danger>.admonition-title,
+.admonition.error>.admonition-title,
+.admonition.bug>.admonition-title {
+  background-color: rgba(255, 23, 68, .1);
+  border-bottom-color: rgba(255, 23, 68, .2);
+}
+
+.admonition.danger>.admonition-title:before {
+  color: rgba(255, 23, 68, 1);
+  content: "\E3E7";
+}
+
+.admonition.error>.admonition-title:before {
+  color: rgba(255, 23, 68, 1);
+  content: "\E14C";
+}
+
+.admonition.bug>.admonition-title:before {
+  color: rgba(255, 23, 68, 1);
+  content: "\E868";
+}
+
+.admonition.example,
+.admonition.snippet {
+  border-left-color: rgba(0, 184, 212, .8);
+}
+
+.admonition.example>.admonition-title,
+.admonition.snippet>.admonition-title {
+  background-color: rgba(0, 184, 212, .1);
+  border-bottom-color: rgba(0, 184, 212, .2);
+}
+
+.admonition.example>.admonition-title:before,
+.admonition.snippet>.admonition-title:before {
+  color: rgba(0, 184, 212, 1);
+  ;
+  content: "\E242";
+}
+
+.admonition.quote,
+.admonition.cite {
+  border-left-color: rgba(158, 158, 158, .8);
+}
+
+.admonition.quote>.admonition-title,
+.admonition.cite>.admonition-title {
+  background-color: rgba(158, 158, 158, .1);
+  border-bottom-color: rgba(158, 158, 158, .2);
+}
+
+.admonition.quote>.admonition-title:before,
+.admonition.cite>.admonition-title:before {
+  color: rgba(158, 158, 158, 1);
+  ;
+  content: "\E244";
+}
+
+    /* Please visit the URL below for more information: */
+/*   https://shd101wyy.github.io/markdown-preview-enhanced/#/customize-css */
+
+    </style>
+    <link rel="stylesheet" href="file:////Users/arorashivoy/.vscode/extensions/shd101wyy.markdown-preview-enhanced-0.6.2/node_modules/@shd101wyy/mume/dependencies/katex/katex.min.css">
+  </head>
+  <body for="html-export">
+    <div class="mume markdown-preview">
+    <html><head></head><body><div><h1 class="mume-header" id="propositions-and-theorems" ebook-toc-level-1 heading="Propositions and Theorems">Propositions and Theorems</h1>
+
+<h1 class="mume-header" id="gauss-jordan-elimination-algorithm" ebook-toc-level-1 heading="Gauss-Jordan elimination Algorithm">Gauss-Jordan elimination Algorithm</h1>
+
+<h2 class="mume-header" id="proposition-1" ebook-toc-level-2 heading="Proposition 1">Proposition 1</h2>
+
+<blockquote>
+<p>For any mxn matrix A, there exist an RREF matrix which is a row equivalent to A</p>
+</blockquote>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>If A is an nxn matrix, and B is an echelon form matrix obtained from A by gaussian reduction without applying any scaling operations,<br>
+Then, det(A) = (-1)<sup>k</sup> det(B)</p>
+<p>where k = num of interchange ops applied</p>
+</div>
+<h3 class="mume-header" id="equivalence-relation" ebook-toc-level-3 heading="Equivalence relation">Equivalence relation</h3>
+
+<p>Let T be an equivalence relation on a set A, then</p>
+<ul>
+<li><strong>Reflexive:</strong> aTa exists, for every a <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> A</li>
+<li><strong>Symmetric:</strong> if aTb exists then bTa also exists, for every a, b <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> A</li>
+<li><strong>Transitive:</strong> if aTb and bTc exists, then aTc also exists, for every a, b, c <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> A</li>
+</ul>
+<h2 class="mume-header" id="proposition-2" ebook-toc-level-2 heading="Proposition 2">Proposition 2</h2>
+
+<blockquote>
+<p>Row equivalence is an equivalence relation of the set R<sup>mxn</sup> of mxn matrices with entries from the set <em>R</em>.</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop2.pdf">Proof</a></p>
+<h2 class="mume-header" id="remark-1" ebook-toc-level-2 heading="Remark 1">Remark 1</h2>
+
+<p>Every equivalence relation includes a partition of the underlying set. The parts of the partition being the equivalence classes, i.e., the equivalence classes are pair-wise disjoint subsets whose union is the whole set.<br>
+Conversely, a corresponding equivalent relation exists given any partition of a set.</p>
+<h2 class="mume-header" id="proposition-2a" ebook-toc-level-2 heading="Proposition 2A">Proposition 2A</h2>
+
+<blockquote>
+<p>A matrix can&apos;t be row equivalent to 2 RREF matrices <br>
+And 2 RREF matrix can&apos;t be row equivalent</p>
+</blockquote>
+<h2 class="mume-header" id="proposition-2b" ebook-toc-level-2 heading="Proposition 2B">Proposition 2B</h2>
+
+<blockquote>
+<p>Let A and B be two mxn matrices. Then, A is row-equivalent to B <strong>if and only if</strong> the two homogeneous systems A<strong>x</strong>=<strong>0</strong> and B<strong>x</strong>=<strong>0</strong> have the same solution set</p>
+</blockquote>
+<h2 class="mume-header" id="conclusive-remark" ebook-toc-level-2 heading="Conclusive Remark">Conclusive Remark</h2>
+
+<p>Each equivalence class for this equivalence relation contains a distinctive member, i.e., the unique RREF matrix. This fact can be used to determine whether two matrices are row-equivalent to each other</p>
+<h1 class="mume-header" id="solving-linear-system" ebook-toc-level-1 heading="Solving linear system">Solving linear system</h1>
+
+<h2 class="mume-header" id="obs-1" ebook-toc-level-2 heading="Obs 1">Obs 1</h2>
+
+<p>The two important matrices related to the system A<strong>x</strong>=<strong>b</strong> are the coefficient matrix A and the <em>augmented matrix</em> of the system [A:<strong>b</strong>]</p>
+<h2 class="mume-header" id="obs-2" ebook-toc-level-2 heading="Obs 2">Obs 2</h2>
+
+<p>If we obtain a row equivalent matrix to either the coefficient matrix or augmented matrix, then the solution set of the system is the same</p>
+<h1 class="mume-header" id="homogeneous-system" ebook-toc-level-1 heading="Homogeneous system">Homogeneous system</h1>
+
+<h2 class="mume-header" id="obs-1-1" ebook-toc-level-2 heading="Obs 1">Obs 1</h2>
+
+<p>Solution of R<strong>x</strong>=<strong>0</strong> is the same as A<strong>x</strong>=<strong>0</strong></p>
+<h2 class="mume-header" id="obs-2-1" ebook-toc-level-2 heading="Obs 2">Obs 2</h2>
+
+<p>If the number of non-zero rows r of R is less than the number of variables n, then the system has a non-trivial solution</p>
+<h2 class="mume-header" id="obs-3" ebook-toc-level-2 heading="Obs 3">Obs 3</h2>
+
+<p>If the number of non zero rows of R is equal to the number of variables, then there are no free variables, and the system has a unique solution (only the trivial solution of a zero vector)</p>
+<h2 class="mume-header" id="proposition-3" ebook-toc-level-2 heading="Proposition 3">Proposition 3</h2>
+
+<blockquote>
+<p>If A is a square matrix, then A is row equivalent to the identity matrix if and only if the homogeneous system A<strong>x</strong>=<strong>0</strong> has only the trivial solution.</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop3.pdf">Proof</a></p>
+<h1 class="mume-header" id="non-homogenous-system" ebook-toc-level-1 heading="Non-Homogenous system">Non-Homogenous system</h1>
+
+<h2 class="mume-header" id="proposition-4" ebook-toc-level-2 heading="Proposition 4">Proposition 4</h2>
+
+<blockquote>
+<p>The system is consistent if and only if the rightmost column of R is not a pivot column</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop4.pdf">Proof</a></p>
+<h2 class="mume-header" id="obs-5" ebook-toc-level-2 heading="Obs 5">Obs 5</h2>
+
+<p>The non-homogeneous system A<strong>x</strong>=<strong>b</strong> can be inconsistent in either of the two cases of the associated homogenous system A<strong>x</strong>=<strong>0</strong> having a unique solution or infinite solution</p>
+<h1 class="mume-header" id="vector-implementation-of-solutions" ebook-toc-level-1 heading="Vector implementation of solutions">Vector implementation of solutions</h1>
+
+<h2 class="mume-header" id="obs-6" ebook-toc-level-2 heading="Obs 6">Obs 6</h2>
+
+<p>A vector is a solution of the system if and only if it is of the form <strong>u</strong>+x<strong>v</strong>, where <strong>v</strong> is a solution of the associated homogeneous system</p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>In case the homogeneous system has only the trivial solution, then <strong>v</strong>=<strong>0</strong> and the system has only a unique solution <strong>u</strong>; otherwise, we have infinitely many solutions</p>
+</div>
+<h1 class="mume-header" id="geometric-interpretation-of-solution" ebook-toc-level-1 heading="Geometric interpretation of solution">Geometric interpretation of solution</h1>
+
+<h2 class="mume-header" id="obs-7" ebook-toc-level-2 heading="Obs 7">Obs 7</h2>
+
+<p>The solution of a homogeneous system is either the origin only or all the points on a line or plane through the origin</p>
+<h2 class="mume-header" id="obs-8" ebook-toc-level-2 heading="Obs 8">Obs 8</h2>
+
+<p>If a non-homogeneous system has even a single solution  point, then its entire solution set consists of only that point or the line or the plane through that point which is parallel to the solution of the associated homogeneous system</p>
+<h1 class="mume-header" id="invertible-matrices" ebook-toc-level-1 heading="Invertible matrices">Invertible matrices</h1>
+
+<h2 class="mume-header" id="obs-1-2" ebook-toc-level-2 heading="Obs 1">Obs 1</h2>
+
+<p>The inverse of matrix A, if it exists, is unique</p>
+<h2 class="mume-header" id="obs-2-2" ebook-toc-level-2 heading="Obs 2">Obs 2</h2>
+
+<p>If A is invertible, then so is A<sup>-1</sup> and (A<sup>-1</sup>)<sup>-1</sup>=A</p>
+<h2 class="mume-header" id="obs-3-1" ebook-toc-level-2 heading="Obs 3">Obs 3</h2>
+
+<p>If A &amp; B are invertible, then so is AB and (AB)<sup>-1</sup>=B<sup>-1</sup>A<sup>-1</sup></p>
+<h2 class="mume-header" id="obs-4" ebook-toc-level-2 heading="Obs 4">Obs 4</h2>
+
+<p>The product of invertible matrices is invertible, and the inverse is the product of the inverses taken in reverse order</p>
+<h1 class="mume-header" id="elementary-matrices" ebook-toc-level-1 heading="Elementary Matrices">Elementary Matrices</h1>
+
+<h2 class="mume-header" id="proposition-5" ebook-toc-level-2 heading="Proposition 5">Proposition 5</h2>
+
+<blockquote>
+<p>If e is an elementary row operation and E is the mxm elementary matrix e(I<sub>m</sub>), then for every mxn matrix A, e(A)=EA</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop5.pdf">Proof</a></p>
+<h2 class="mume-header" id="proposition-6" ebook-toc-level-2 heading="Proposition 6">Proposition 6</h2>
+
+<blockquote>
+<p>Every elementary matrix is invertible</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop6.pdf">Proof</a></p>
+<h1 class="mume-header" id="vit" ebook-toc-level-1 heading="VIT">VIT</h1>
+
+<div class="admonition danger">
+<p class="admonition-title">Theorem 1</p>
+<p>The following are equivalent<sup class="footnote-ref"><a href="#fn1" id="fnref1">[1]</a></sup> for an mxm square matrix A:</p>
+<ol>
+<li>A is invertible</li>
+<li>A is row equivalent to the identity matrix
+<ul>
+<li>All the column vectors of the matrix are linearly independent</li>
+</ul>
+</li>
+<li>The homogeneous system A<strong>x</strong>=<strong>0</strong> has only the trivial solution</li>
+<li>The system of equations A<strong>x</strong>=<strong>b</strong> has at least one solution for every <strong>b</strong> in <em>R</em><sup>m</sup></li>
+<li>det A &#x2260; 0</li>
+<li>Col A = <em>R<sup>m</sup></em></li>
+<li>rank A = m</li>
+<li>0 is not an eigenvalue for A</li>
+</ol>
+</div>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Theorem1.pdf">Proof</a></p>
+<h1 class="mume-header" id="calculation-of-the-inverse-of-matrix-i" ebook-toc-level-1 heading="Calculation of the inverse of Matrix-I">Calculation of the inverse of Matrix-I</h1>
+
+<h2 class="mume-header" id="corollary-t11" ebook-toc-level-2 heading="Corollary T1.1">Corollary T1.1</h2>
+
+<p>An invertible sq matrix A is a product of an elementary matrix. Any sequence of row operations that reduce A to I also transform I to A<sup>-1</sup></p>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/CorollaryT1.1.pdf">Proof</a></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p>Form the augmented matrix [A: I] (sometimes known as the enlarged matrix of A) and carry out e-ops until the A part becomes I. The final result is of the form [I: A<sup>-1</sup>]</p>
+</div>
+<h2 class="mume-header" id="corollary-t12" ebook-toc-level-2 heading="Corollary T1.2">Corollary T1.2</h2>
+
+<p>If A has a left inverse or a right inverse, then A has an inverse</p>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/CorollaryT1.2.pdf">Proof</a></p>
+<h2 class="mume-header" id="corollary-t13" ebook-toc-level-2 heading="Corollary T1.3">Corollary T1.3</h2>
+
+<p>Suppose an sq matrix A is factored as a product of sq matrices,<br>
+i.e., A = A<sub>1</sub>A<sub>2</sub>...A<sub>n</sub> (<strong>all sq matrices</strong>) with n &#x2265; 2,<br>
+Then A is invertible if and only if each A<sub>i</sub> is invertible.</p>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/CorollaryT1.3.pdf">Proof</a></p>
+<h2 class="mume-header" id="corollary-t14" ebook-toc-level-2 heading="Corollary T1.4">Corollary T1.4</h2>
+
+<p>The matrix A is invertible if and only if the system of equations A<strong>x</strong>=<strong>b</strong> has a unique solution for each and every vector <strong>b</strong> in R<sup>m</sup></p>
+<h1 class="mume-header" id="lu-factorization-of-a-matrix" ebook-toc-level-1 heading="LU Factorization of a matrix">LU Factorization of a matrix</h1>
+
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Examples/LU.pdf">Example</a></p>
+<h1 class="mume-header" id="formal-definition-of-vector-space" ebook-toc-level-1 heading="Formal Definition of Vector Space">Formal Definition of Vector Space</h1>
+
+<h2 class="mume-header" id="axioms" ebook-toc-level-2 heading="Axioms">Axioms</h2>
+
+<p>For <strong>u</strong>, <strong>v</strong> &#x2208; V and c, d &#x2208; F, the following axioms hold true:</p>
+<ol>
+<li>Closure under the operations: <strong>u</strong>+<strong>v</strong> &#x2208; V &amp; c<strong>u</strong> &#x2208; V</li>
+<li>The following axioms hold for addition
+<ol>
+<li>Associative property</li>
+<li>Identity
+<ul>
+<li><strong>0</strong>+<strong>u</strong>=<strong>u</strong>+<strong>0</strong>=<strong>u</strong></li>
+</ul>
+</li>
+<li>Every vector <strong>u</strong> &#x2208; V has an additive inverse <strong>v</strong> &#x2208; V such that <strong>u</strong>+<strong>v</strong> = 0</li>
+<li>Commutative property</li>
+</ol>
+</li>
+<li>The following multiplication property are satisfied
+<ol>
+<li>c(<strong>u</strong>+<strong>v</strong>) = c<strong>u</strong>+c<strong>v</strong></li>
+<li>(c+d)<strong>u</strong>=c<strong>u</strong>+d<strong>u</strong></li>
+<li>c(d<strong>u</strong>)=(cd)<strong>u</strong></li>
+<li>1<strong>u</strong>=<strong>u</strong> (where 1 is the identity unit element of F)</li>
+</ol>
+</li>
+</ol>
+<h2 class="mume-header" id="example-of-vector-space" ebook-toc-level-2 heading="Example of Vector Space">Example of Vector Space</h2>
+
+<ol>
+<li>
+<p>The space <em>R</em><sup>n</sup> of n-tuple of size n. These are often referred to as (column) vectors. The base field is <em>R</em></p>
+</li>
+<li>
+<dl>
+<dt>The space <em>R</em><sup>mxn</sup> of mxn matrix with real entries. Again with base field <em>R</em></dt>
+<dd><strong>Remark</strong><br>
+The fact that matrices form a vector space is of fundamental importance in both the theory and application of linear algebra</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>The space C[0, 1] of continuous function from the closed interval [0, 1] on the real line of <em>R</em>, i.e.,</dt>
+<dd>C[0, 1]= {f: f is a continuous function, f:[0,1] -&gt; <em>R</em>}</dd>
+</dl>
+</li>
+<li>
+<dl>
+<dt>The space R<sup>&#x221E;</sup> of real sequences is a vector space over <em>R</em>, i.e.,</dt>
+<dd>
+<p>R<sup>&#x221E;</sup> = {&lt;a<sub>n</sub>&gt;:&lt;a<sub>n</sub>&gt; is a sequence with real numbers}</p>
+</dd>
+<dd>
+<p>Of more interest than R<sup>&#x221E;</sup> itself is c, the subset of convergent sequences. It is also a vector space.</p>
+</dd>
+</dl>
+</li>
+<li>
+<p>The space R<sub>n</sub>[t] of the polynomials of degree &#x2264; n with real coefficients.</p>
+</li>
+<li>
+<p>The space R[t] of all polynomial with all real coefficients.</p>
+</li>
+</ol>
+<h1 class="mume-header" id="consequences-of-vector-space-axioms" ebook-toc-level-1 heading="Consequences of Vector Space Axioms">Consequences of Vector Space Axioms</h1>
+
+<h2 class="mume-header" id="proposition-7" ebook-toc-level-2 heading="Proposition 7">Proposition 7</h2>
+
+<blockquote>
+<p>Let V be a vector space. Then:</p>
+<ol>
+<li>The zero vector is unique</li>
+<li>The additive inverse of any vector <strong>u</strong> is unique; We use the notation -<strong>u</strong> for the inverse vector</li>
+<li>0<strong>u</strong> = <strong>0</strong> for every vector <strong>u</strong></li>
+<li>c<strong>0</strong> = <strong>0</strong> for every scalar c</li>
+<li>-<strong>u</strong> = (-1)<strong>u</strong> for every vector <strong>u</strong></li>
+</ol>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop7.pdf">Proof</a></p>
+<h1 class="mume-header" id="subspace" ebook-toc-level-1 heading="Subspace">Subspace</h1>
+
+<p>Let V be a vector space over the field F. A (vector) subspace of V is a non-empty subset W of V, which is a vector space over F with the operations of vector additions and scalar multiplication taken from V.</p>
+<h1 class="mume-header" id="test-for-subspaces" ebook-toc-level-1 heading="Test for subspaces">Test for subspaces</h1>
+
+<h2 class="mume-header" id="proposition-8" ebook-toc-level-2 heading="Proposition 8">Proposition 8</h2>
+
+<blockquote>
+<p>A subset W of V is a subset if and only if it satisfies the following three properties</p>
+<ol>
+<li>The zero vector <strong>0</strong> is in W</li>
+<li>W is closed under addition. That is, for each <strong>u</strong> &amp; <strong>v</strong> &#x2208; W, the sum <strong>u</strong>+<strong>v</strong> &#x2208; W</li>
+<li>W is closed under scalar multiplication. That is, for each <strong>u</strong> &#x2208; W, and each scalar c, the scalar product c<strong>u</strong> &#x2208; W</li>
+</ol>
+</blockquote>
+<h2 class="mume-header" id="proposition-9" ebook-toc-level-2 heading="Proposition 9">Proposition 9</h2>
+
+<blockquote>
+<p>A <strong>non-empty</strong> subset W of V is a subspace if and only if for each <strong>u</strong> and <strong>v</strong> &#x2208; W, and each scalar c, the sum c<strong>u</strong>+<strong>v</strong> &#x2208; W.</p>
+</blockquote>
+<h1 class="mume-header" id="span-of-a-set-of-vector" ebook-toc-level-1 heading="Span of a set of vector">Span of a set of vector</h1>
+
+<h3 class="mume-header" id="definition-1" ebook-toc-level-3 heading="Definition 1">Definition 1</h3>
+
+<p>A linear combination of a finitely many given vectors in any sum of a scalar multiple of the vectors.</p>
+<h3 class="mume-header" id="definition-2" ebook-toc-level-3 heading="Definition 2">Definition 2</h3>
+
+<p>Let S = {<strong>v<sub>1</sub>, ..., v<sub>p</sub></strong>} be a finite set of vectors in a vector space V. Then the span of S is the set of all the vectors that can be written as linear combinations of the vectors <strong>v<sub>1</sub>, ..., v<sub>p</sub></strong></p>
+<h2 class="mume-header" id="proposition-10" ebook-toc-level-2 heading="Proposition 10">Proposition 10</h2>
+
+<blockquote>
+<p>If S = {<strong>v<sub>1</sub>, ..., v<sub>p</sub></strong>} is a set of vectors in a vector space V, then Span S = Span{<strong>v<sub>1</sub>, ..., v<sub>p</sub></strong>} is a subspace of V.</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop10.pdf">Proof</a></p>
+<h2 class="mume-header" id="corollary-101" ebook-toc-level-2 heading="Corollary 10.1">Corollary 10.1</h2>
+
+<p>Let V be a vector space</p>
+<ol>
+<li>If U and W are two subspaces of V, then U&#x2229;W is also a subspace of V.</li>
+<li>If S = {<strong>v<sub>1</sub>, ..., v<sub>p</sub></strong>} is a set of vectors in a vector space V, then Span S is the smallest subspace which contains S, i.e., if W is a subspace such that S&#x2286;W, then Span S&#x2286;W</li>
+</ol>
+<h2 class="mume-header" id="remark" ebook-toc-level-2 heading="Remark">Remark</h2>
+
+<p>In terms of this, Span S is sometimes described as the intersection of all subspaces of V containing S.</p>
+<h1 class="mume-header" id="linear-dependence" ebook-toc-level-1 heading="Linear Dependence">Linear Dependence</h1>
+
+<p>Let <strong>v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>p</sub></strong> be a finite list of vectors in a vector space V. Then the vectors are said to be (linearly) dependent if there exist scalars c<sub>1</sub>, c<sub>2</sub>, ..., c<sub>p</sub>, not all zeros, such that<br>
+c<sub>1</sub><strong>v<sub>1</sub></strong>+ ...+ c<sub>p</sub><strong>v<sub>p</sub></strong> = <strong>0</strong></p>
+<h2 class="mume-header" id="consequences-of-the-definition" ebook-toc-level-2 heading="Consequences of the Definition">Consequences of the Definition</h2>
+
+<ul>
+<li><strong>Remark 1:</strong> Any list which contains the <strong>0</strong> has to be linearly dependent</li>
+<li><strong>Remark 2:</strong> A single non-zero vector is linearly independent</li>
+<li><strong>Remark 3:</strong> A list of two non-zero vectors is linearly dependent if and only if one vector is a scalar multiple of the other.</li>
+<li><strong>Remark 4:</strong> A list of non-zero vectors is linearly dependent if and only if at least one of the vectors is a linear combination of the others</li>
+<li><strong>Remark 5:</strong> Consequently, any list which contains a repeated vector must be linearly dependent. A list that is linearly independent corresponds to a set</li>
+<li><strong>Remark 6:</strong> Any list which contains a linearly dependent list is linearly dependent</li>
+<li><strong>Remark 7:</strong> Any subset of a linearly independent set is linearly independent.</li>
+</ul>
+<h1 class="mume-header" id="sequences" ebook-toc-level-1 heading="Sequences">Sequences</h1>
+
+<h2 class="mume-header" id="proposition-s1" ebook-toc-level-2 heading="Proposition S1">Proposition S1</h2>
+
+<p>Suppose &lt;a<sub>n</sub>&gt; -&gt; L<sub>1</sub> and &lt;b<sub>n</sub>&gt; -&gt; L<sub>2</sub> and c &#x2208; <em>R</em>, then:</p>
+<ol>
+<li>&lt;a<sub>n</sub>&gt;+&lt;b<sub>n</sub>&gt; -&gt; L<sub>1</sub>+L<sub>2</sub></li>
+<li>c&lt;a<sub>n</sub>&gt; -&gt; cL<sub>1</sub></li>
+<li>&lt;a<sub>n</sub>&gt;&lt;b<sub>n</sub>&gt; -&gt; L<sub>1</sub>L<sub>2</sub></li>
+<li>If a<sub>n</sub> &#x2260; 0 for all n and L<sub>1</sub> &#x2260; 0 then
+<ul>
+<li>&lt;1/a<sub>n</sub>&gt; -&gt; 1/L<sub>1</sub></li>
+</ul>
+</li>
+</ol>
+<h1 class="mume-header" id="determinants" ebook-toc-level-1 heading="Determinants">Determinants</h1>
+
+<h2 class="mume-header" id="definition" ebook-toc-level-2 heading="Definition">Definition</h2>
+
+<p>If A &#x2208; F<sup>2x2</sup> where A = [a<sub>ij</sub>], then det A is defined to be the scalar a<sub>11</sub>a<sub>22</sub> - a<sub>12</sub>a<sub>21</sub>.</p>
+<p>If A &#x2208; F<sup>nxn</sup>, let A<sub>i,j</sub> donate the (n-1)x(n-1) matrix obtained from A by omission of the i<sup>th</sup> and j<sup>th</sup> column.</p>
+<h2 class="mume-header" id="expansion-formulae" ebook-toc-level-2 heading="Expansion Formulae">Expansion Formulae</h2>
+
+<h3 class="mume-header" id="column" ebook-toc-level-3 heading="Column">Column</h3>
+
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>d</mi><mi>e</mi><mi>t</mi><mi>A</mi><mo>=</mo><munderover><mo>&#x2211;</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mi>d</mi><mi>e</mi><mi>t</mi><msub><mi>A</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">det A = \sum_{i=1}^n a_{ij} det A_{i,j}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:2.9291em;vertical-align:-1.2777em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:1.2777em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">ij</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<h3 class="mume-header" id="row" ebook-toc-level-3 heading="Row">Row</h3>
+
+<p><span class="katex-display"><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML" display="block"><semantics><mrow><mi>d</mi><mi>e</mi><mi>t</mi><mi>A</mi><mo>=</mo><munderover><mo>&#x2211;</mo><mrow><mi>j</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></munderover><msub><mi>a</mi><mrow><mi>i</mi><mi>j</mi></mrow></msub><mi>d</mi><mi>e</mi><mi>t</mi><msub><mi>A</mi><mrow><mi>i</mi><mo separator="true">,</mo><mi>j</mi></mrow></msub></mrow><annotation encoding="application/x-tex">det A = \sum_{j=1}^n a_{ij} det A_{i,j}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord mathnormal">A</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:3.0652em;vertical-align:-1.4138em;"></span><span class="mop op-limits"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.6514em;"><span style="top:-1.8723em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.05em;"><span class="pstrut" style="height:3.05em;"></span><span><span class="mop op-symbol large-op">&#x2211;</span></span></span><span style="top:-4.3em;margin-left:0em;"><span class="pstrut" style="height:3.05em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathnormal mtight">n</span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:1.4138em;"><span></span></span></span></span></span><span class="mspace" style="margin-right:0.1667em;"></span><span class="mord"><span class="mord mathnormal">a</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight" style="margin-right:0.05724em;">ij</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span><span class="mord mathnormal">d</span><span class="mord mathnormal">e</span><span class="mord mathnormal">t</span><span class="mord"><span class="mord mathnormal">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3117em;"><span style="top:-2.55em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">i</span><span class="mpunct mtight">,</span><span class="mord mathnormal mtight" style="margin-right:0.05724em;">j</span></span></span></span></span><span class="vlist-s">&#x200B;</span></span><span class="vlist-r"><span class="vlist" style="height:0.2861em;"><span></span></span></span></span></span></span></span></span></span></span></p>
+<h2 class="mume-header" id="proposition-d1" ebook-toc-level-2 heading="Proposition D1">Proposition D1</h2>
+
+<blockquote>
+<p>The following hold for the determinant of a sq. matrix A</p>
+<ol>
+<li>If the matrix A&apos; is obtained from A by interchanging two rows. then det A&apos; = det A</li>
+<li>If the matrix A&apos; is obtained from A by multiplying some row by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi><mo>&#x2208;</mo><mi>F</mi></mrow><annotation encoding="application/x-tex">\lambda \in F</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.7335em;vertical-align:-0.0391em;"></span><span class="mord mathnormal">&#x3BB;</span><span class="mspace" style="margin-right:0.2778em;"></span><span class="mrel">&#x2208;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord mathnormal" style="margin-right:0.13889em;">F</span></span></span></span>, then det A&apos; = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span> det A</li>
+<li>If the matrix A&apos; is obtained from A by adding a multiple of one row to another, then det A&apos; = det A</li>
+</ol>
+</blockquote>
+<h1 class="mume-header" id="procedure-for-computing-the-determinant" ebook-toc-level-1 heading="Procedure for computing the determinant">Procedure for computing the determinant</h1>
+
+<h2 class="mume-header" id="proposition-d2" ebook-toc-level-2 heading="Proposition D2">Proposition D2</h2>
+
+<blockquote>
+<p>If a nxn matrix A is upper triangular, then det A = a<sub>11</sub>a<sub>22</sub>...a<sub>nn</sub></p>
+</blockquote>
+<h2 class="mume-header" id="corollary-d21" ebook-toc-level-2 heading="Corollary D2.1">Corollary D2.1</h2>
+
+<p>In order to determine the determinant of a nxn matrix, use elementary row ops of interchange and replacement only to reduce A to an upper triangular matrix A&apos;. If r is the number of row interchange carried out, then det A = (-1)<sup>r</sup> det A&apos;</p>
+<h1 class="mume-header" id="further-properties-of-the-determinant" ebook-toc-level-1 heading="Further Properties of the determinant">Further Properties of the determinant</h1>
+
+<h2 class="mume-header" id="proposition-d3" ebook-toc-level-2 heading="Proposition D3">Proposition D3</h2>
+
+<blockquote>
+<p>A nxn matrix A is invertible if and only if det A &#x2260; 0<br>
+=&gt; <a href="#vit">VIT</a></p>
+</blockquote>
+<h2 class="mume-header" id="proposition-d4" ebook-toc-level-2 heading="Proposition D4">Proposition D4</h2>
+
+<blockquote>
+<p>For all A, B <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo><msup><mi>F</mi><mrow><mi>n</mi><mi>x</mi><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\in F^{nxn}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">x</span><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span></span>, det (AB) = (det A)(det B)</p>
+</blockquote>
+<h2 class="mume-header" id="corollary-d41" ebook-toc-level-2 heading="Corollary D4.1">Corollary D4.1</h2>
+
+<p>If A is invertible, then det A<sup>-1</sup> = (det A)<sup>-1</sup></p>
+<h2 class="mume-header" id="proposition-d5" ebook-toc-level-2 heading="Proposition D5">Proposition D5</h2>
+
+<blockquote>
+<p>For all A <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo><msup><mi>F</mi><mrow><mi>n</mi><mi>x</mi><mi>n</mi></mrow></msup></mrow><annotation encoding="application/x-tex">\in F^{nxn}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span><span class="mspace" style="margin-right:0.2778em;"></span></span><span class="base"><span class="strut" style="height:0.6833em;"></span><span class="mord"><span class="mord mathnormal" style="margin-right:0.13889em;">F</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.6644em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathnormal mtight">n</span><span class="mord mathnormal mtight">x</span><span class="mord mathnormal mtight">n</span></span></span></span></span></span></span></span></span></span></span></span>, det A<sup>T</sup> = det A</p>
+</blockquote>
+<h1 class="mume-header" id="cramers-rule" ebook-toc-level-1 heading="Cramer&amp;apos;s Rule">Cramer&apos;s Rule</h1>
+
+<h3 class="mume-header" id="definition-1" ebook-toc-level-3 heading="Definition">Definition</h3>
+
+<p>For any nxn matrix A and any vector <strong>b</strong> in <em>R<sup>n</sup></em>, define A<sub>i</sub>(<strong>b</strong>) to be the matrix obtained by replacing the i<sup>th</sup> column of A by <strong>b</strong>.</p>
+<h2 class="mume-header" id="proposition-d6" ebook-toc-level-2 heading="Proposition D6">Proposition D6</h2>
+
+<blockquote>
+<p>Let A be any invertible nxn matrix. For any vector <strong>b</strong> in <em>R<sup>n</sup></em>, The unique solution <strong>x</strong> of A<strong>x</strong>=<strong>b</strong> has entries given by:<br>
+<strong>x<sub>i</sub></strong> = (det A<sub>i</sub>(<strong>b</strong>))/(det A) for i=1,2,...,n</p>
+</blockquote>
+<h1 class="mume-header" id="application-of-cramers-law" ebook-toc-level-1 heading="Application of Cramer&amp;apos;s law">Application of Cramer&apos;s law</h1>
+
+<h2 class="mume-header" id="terminology" ebook-toc-level-2 heading="Terminology">Terminology</h2>
+
+<p>For any nxn matrix A, we define the cofactor C<sub>ij</sub> = (-1)<sup>i+j</sup> det A<sub>ij</sub></p>
+<h2 class="mume-header" id="definition-2" ebook-toc-level-2 heading="Definition">Definition</h2>
+
+<p>The adjoint of A is the matrix whose entries are the cofactor of A transposed.</p>
+<h2 class="mume-header" id="proposition-d7" ebook-toc-level-2 heading="Proposition D7">Proposition D7</h2>
+
+<blockquote>
+<p>Let A be any invertible nxn matrix, then<br>
+A<sup>-1</sup> = 1/(det A) adj(A)</p>
+</blockquote>
+<h1 class="mume-header" id="application-of-determinant-to-area-and-volume" ebook-toc-level-1 heading="Application of determinant to area and volume">Application of determinant to area and volume</h1>
+
+<h2 class="mume-header" id="proposition-d8" ebook-toc-level-2 heading="Proposition D8">Proposition D8</h2>
+
+<blockquote>
+<ol>
+<li>If A is a 2x2 matrix, then the area of the parallelogram determined by the column of A is |det A|</li>
+<li>If A is a 3x3 matrix, then the volume of the parallelepiped determined by the column of A is |det A|</li>
+</ol>
+</blockquote>
+<h2 class="mume-header" id="proposition-d9" ebook-toc-level-2 heading="Proposition D9">Proposition D9</h2>
+
+<blockquote>
+<ol>
+<li>
+<p>Let T:<em>R<sup>2</sup>-&gt;R<sup>2</sup></em> be the linear transformation determined by a 2x2 matrix A. If S is a parallelogram in <em>R<sup>2</sup></em>, then <br>
+{area of T(S)} = |det A| {area of S}</p>
+</li>
+<li>
+<p>Let T:<em>R<sup>3</sup>-&gt;R<sup>3</sup></em> be the linear transformation determined by a 3x3 matrix A. If S is a parallelepiped in <em>R<sup>3</sup></em>, then <br>
+{volume of T(S)} = |det A| {volume of S}</p>
+</li>
+</ol>
+</blockquote>
+<h2 class="mume-header" id="proposition-d10" ebook-toc-level-2 heading="Proposition D10">Proposition D10</h2>
+
+<blockquote>
+<p>The conclusion of proposition D9 holds whenever S is a region in <em>R<sup>2</sup></em> with finite area or a region in <em>R<sup>3</sup></em> with finite volume.</p>
+</blockquote>
+<p>In other words<br>
+{area or volume of T(S)} = |det A|{area or volume of S}</p>
+<h1 class="mume-header" id="basis-and-dimension" ebook-toc-level-1 heading="Basis and Dimension">Basis and Dimension</h1>
+
+<h3 class="mume-header" id="definitions" ebook-toc-level-3 heading="Definitions">Definitions</h3>
+
+<ul>
+<li>A basis for a vector space V is a linearly independent set S of vectors such that V = Span S</li>
+<li>A space V that has a (finite) basis is finite-dimensional.</li>
+<li>A space that does not have a finite basis said to be infinite dimensional<sup class="footnote-ref"><a href="#fn2" id="fnref2">[2]</a></sup></li>
+</ul>
+<h2 class="mume-header" id="infinite-dimensional-space" ebook-toc-level-2 heading="Infinite-dimensional space">Infinite-dimensional space</h2>
+
+<p>The space R[t] is infinite-dimensional</p>
+<h2 class="mume-header" id="proposition-11" ebook-toc-level-2 heading="Proposition 11">Proposition 11</h2>
+
+<blockquote>
+<p>B = {<strong>v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>p</sub></strong>} is a basis of the vector space V, if and only if every vector <strong>v</strong> &#x2208; V is uniquely expressible as a linear combination of the elements of B</p>
+</blockquote>
+<h2 class="mume-header" id="proposition-12" ebook-toc-level-2 heading="Proposition 12">Proposition 12</h2>
+
+<h3 class="mume-header" id="steinitz-exchange-lemma" ebook-toc-level-3 heading="Steinitz Exchange Lemma">Steinitz Exchange Lemma</h3>
+
+<blockquote>
+<p>Suppose <strong>v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>n</sub></strong> are linearly independent vectors in a vector space V, and suppose<br>
+V = Span {<strong>w<sub>1</sub>, ..., w<sub>m</sub></strong>}, then:</p>
+<ol>
+<li>n &#x2264; m</li>
+<li>V = Span {<strong>v<sub>1</sub>, ..., v<sub>n</sub>, w<sub>n+1</sub>, ..., w<sub>m</sub></strong>}, after some reordering the w&apos;s if necessary.</li>
+</ol>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop12.pdf">Proof</a></p>
+<h2 class="mume-header" id="proposition-13" ebook-toc-level-2 heading="Proposition 13">Proposition 13</h2>
+
+<blockquote>
+<p>If V is a finite-dimensional vector space, then any two bases of V have the same number of elements.</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop13.pdf">Proof</a></p>
+<h2 class="mume-header" id="dimension" ebook-toc-level-2 heading="Dimension">Dimension</h2>
+
+<p>The dimension of a finite-dimensional space is the number of elements in a basis for V. This is written as dim V.</p>
+<h1 class="mume-header" id="how-to-create-basis" ebook-toc-level-1 heading="How to create Basis">How to create Basis</h1>
+
+<h2 class="mume-header" id="proposition-14" ebook-toc-level-2 heading="Proposition 14">Proposition 14</h2>
+
+<blockquote>
+<p>Suppose S = {<strong>v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>n</sub></strong>} is a linearly independent set in a vector space V. Suppose <strong>v</strong> is a vector which is not in Span S, then the set obtained by adjoining <strong>v</strong> to S is linearly independent</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop14.pdf">Proof</a></p>
+<h2 class="mume-header" id="proposition-15" ebook-toc-level-2 heading="Proposition 15">Proposition 15</h2>
+
+<blockquote>
+<p>Any linearly independent set S of a finite-dimensional vector space can, if required be expanded to a basis by adjoining vectors.</p>
+</blockquote>
+<h2 class="mume-header" id="proposition-16" ebook-toc-level-2 heading="Proposition 16">Proposition 16</h2>
+
+<blockquote>
+<p>Any finite spanning set S in a non-zero vector space can, if required, be contracted to a basis by deleting (some) vector(s)</p>
+</blockquote>
+<h2 class="mume-header" id="proposition-17" ebook-toc-level-2 heading="Proposition 17">Proposition 17</h2>
+
+<blockquote>
+<p>Let V be a non-zero finite-dimensional vector span with dimension n. Then:</p>
+<ol>
+<li>Any linearly independent set of vectors must have &#x2264; n vectors. If a linearly independent set has n vectors, then it must be a basis, i.e., it must also be spanning set of V.</li>
+<li>Any spanning set of V that have &#x2265; n vectors must be linearly dependent. If a spanning set has n vectors, it must be a basis, i.e., it must also be linearly independent.</li>
+</ol>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop17.pdf">Proof</a></p>
+<h1 class="mume-header" id="dimension-of-subspace" ebook-toc-level-1 heading="Dimension of Subspace">Dimension of Subspace</h1>
+
+<h2 class="mume-header" id="proposition-18" ebook-toc-level-2 heading="Proposition 18">Proposition 18</h2>
+
+<blockquote>
+<p>If W is a proper subspace of a finite dimensional space V, then W is also finite dimensional <br>
+0 &lt; dim W &lt; dim V</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop18.pdf">Proof</a></p>
+<h1 class="mume-header" id="sum-of-subspaces" ebook-toc-level-1 heading="Sum of Subspaces">Sum of Subspaces</h1>
+
+<h3 class="mume-header" id="definition-3" ebook-toc-level-3 heading="Definition">Definition</h3>
+
+<p>Let U and W be subspaces of the vector space V. Then the sum of U and W, <br>
+U+W = {<strong>u</strong> + <strong>w</strong>: <strong>u</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> U, <strong>w</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> W}</p>
+<p>U + W is the smallest subspace of V containing both U and W.</p>
+<h2 class="mume-header" id="proposition-19" ebook-toc-level-2 heading="Proposition 19">Proposition 19</h2>
+
+<blockquote>
+<p>If U and W are finite dimensional subspace of the vector space V, then<br>
+dim (U+W) = dim U + dim W - dim (U &#x2229; W)</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop19.pdf">Proof</a></p>
+<h1 class="mume-header" id="direct-sum" ebook-toc-level-1 heading="Direct Sum">Direct Sum</h1>
+
+<h3 class="mume-header" id="definition-4" ebook-toc-level-3 heading="Definition">Definition</h3>
+
+<p>V is said to be the direct sum of subspaces U and W if every vector <strong>v</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> V is uniquely expressible in the form <strong>v = u + w</strong>, where <strong>u</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> U and <strong>w</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> W. We shall use the notation V=U&#x2295;W to indicate that V is the direct sum of U and W.</p>
+<h2 class="mume-header" id="proposition-20" ebook-toc-level-2 heading="Proposition 20">Proposition 20</h2>
+
+<blockquote>
+<p>If U and W are subspaces of the vector space of the vector V, then V = U &#x2295; W if and only if V=U+W and U &#x2229; W = {<strong>0</strong>}</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop20.pdf">Proof</a></p>
+<h2 class="mume-header" id="corollary-201" ebook-toc-level-2 heading="Corollary 20.1">Corollary 20.1</h2>
+
+<p>If V is the direct sum of the finite dimensional subspaces U and W, then dim V = dim (U&#x2295;W) = dim U + dim W</p>
+<h1 class="mume-header" id="three-important-subspaces" ebook-toc-level-1 heading="Three important subspaces">Three important subspaces</h1>
+
+<h3 class="mume-header" id="null-space" ebook-toc-level-3 heading="Null Space">Null Space</h3>
+
+<p>The null space of an mxn matrix A, written Nul A, is the set of all solutions of the homogeneous system A<strong>x</strong>=<strong>0</strong></p>
+<h2 class="mume-header" id="proposition-21" ebook-toc-level-2 heading="Proposition 21">Proposition 21</h2>
+
+<blockquote>
+<p>The null space of an mxn matrix A is a subspace in <em>R<sup>n</sup></em>. Or equivalently, the set of all the solutions of a homogeneous system of m equation variables is a subspace in <em>R<sup>n</sup></em><br>
+Nul A = {<strong>x</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> <em>R<sup>n</sup></em>: A<strong>x</strong> = <strong>0</strong>}</p>
+</blockquote>
+<h3 class="mume-header" id="column-space" ebook-toc-level-3 heading="Column space">Column space</h3>
+
+<p>The column space of a mxn matrix A, written Col A, is the set of all linear combinations of the columns of A, i.e., the span of the column vectors obtained from A.</p>
+<p>If A = [<strong>a<sub>1</sub>, ..., a<sub>n</sub></strong>] then Col A = Span {<strong>a<sub>1</sub>, ..., a<sub>n</sub></strong>}</p>
+<h2 class="mume-header" id="proposition-22" ebook-toc-level-2 heading="Proposition 22">Proposition 22</h2>
+
+<blockquote>
+<p>Col A is a subspace in <em>R<sup>m</sup></em><br>
+Col A = {<strong>b</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> <em>R<sup>m</sup></em>: <strong>b</strong>=A<strong>x</strong> for some <strong>x</strong> in <em>R<sup>n</sup></em>}</p>
+</blockquote>
+<h2 class="mume-header" id="proposition-23" ebook-toc-level-2 heading="Proposition 23">Proposition 23</h2>
+
+<blockquote>
+<p>The pivot columns of a matrix A form the basis of Col A</p>
+</blockquote>
+<p><strong>Note:</strong> We take the columns of A for the basis and not the RREF</p>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop23.pdf">Proof</a></p>
+<h3 class="mume-header" id="row-space" ebook-toc-level-3 heading="Row space">Row space</h3>
+
+<p>The row space of an mxn matrix, written Row A, is the set of all linear combinations of the rows of A</p>
+<h2 class="mume-header" id="proposition-24" ebook-toc-level-2 heading="Proposition 24">Proposition 24</h2>
+
+<blockquote>
+<p>Row A is a subspace in <em>R<sup>n</sup></em></p>
+</blockquote>
+<h2 class="mume-header" id="proposition-25" ebook-toc-level-2 heading="Proposition 25">Proposition 25</h2>
+
+<blockquote>
+<p>Row equivalent matrices have the same row space</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Examples/NulVsCol.pdf">Difference between Nul A and Col A</a></p>
+<h1 class="mume-header" id="rank-theorem" ebook-toc-level-1 heading="Rank Theorem">Rank Theorem</h1>
+
+<p>If A is an mxn matrix, then the column rank of A is defines as dim(Col A). Similarly, for row rank and nullity, dim (Row A) and dim (Nul A) resp.</p>
+<div class="admonition danger">
+<p class="admonition-title">Theorem 2</p>
+<ol>
+<li>The row rank and column rank of a matrix A are equal. This number is called rank of A</li>
+<li>The rank of A is equal to the number of pivot positions in the RREF matrix obtained by A.</li>
+<li>rank(A) + nullity(A) = n = number of columns of A</li>
+</ol>
+</div>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Theorem2.pdf">Proof</a></p>
+<h2 class="mume-header" id="corollary-t21" ebook-toc-level-2 heading="Corollary T2.1">Corollary T2.1</h2>
+
+<p>A square mxm matrix is invertible if and only if rank(A) = m</p>
+<h1 class="mume-header" id="linear-transformations" ebook-toc-level-1 heading="Linear transformations">Linear transformations</h1>
+
+<p>A map or function T: V -&gt; W from a vector space V to a vector space W is said to be linear transformation if:</p>
+<ol>
+<li>T(<strong>u + v</strong>) = T(<strong>u</strong>) + T(<strong>v</strong>) for all <strong>u, v</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> V</li>
+<li>T(c<strong>u</strong>) = cT(<strong>u</strong>) for all <strong>u</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> V and all scalar c <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> F</li>
+</ol>
+<h2 class="mume-header" id="proposition-26a" ebook-toc-level-2 heading="Proposition 26(a)">Proposition 26(a)</h2>
+
+<blockquote>
+<p>A linear transformation T:V -&gt; W is completely determined by its action on a basis of V; in other words, by its values on the vectors in the basis of V.</p>
+</blockquote>
+<h2 class="mume-header" id="proposition-26b" ebook-toc-level-2 heading="Proposition 26(b)">Proposition 26(b)</h2>
+
+<blockquote>
+<p>Conversely, given a basis B= {<strong>v<sub>1</sub>, ..., v<sub>n</sub></strong>} of V, and a list of n vectors <strong>w<sub>1</sub>, ..., w<sub>n</sub></strong> (not necessarily distinct) in the co-domain space W, there is a unique linear transformation T such that T(<strong>v<sub>1</sub></strong>)=<strong>w<sub>1</sub></strong>, ..., T(<strong>v<sub>n</sub></strong>)=<strong>w<sub>n</sub></strong></p>
+</blockquote>
+<h1 class="mume-header" id="fundamental-spaces-for-a-linear-transformation" ebook-toc-level-1 heading="Fundamental spaces for a linear transformation">Fundamental spaces for a linear transformation</h1>
+
+<p>There are two important subspaces associated with any linear transformation:</p>
+<ol>
+<li>The kernel of T, Ker T = {<strong>v</strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span>V: T<strong>v</strong>=<strong>0</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> W} is  a subspace of V</li>
+<li>The range of T, Range T = {<strong>w</strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span>W: <strong>w</strong>=T<strong>v</strong> for some <strong>v</strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span>V}</li>
+</ol>
+<p><strong>Remark</strong>: T is injective if and only if Ker T = {<strong>0</strong>}</p>
+<h1 class="mume-header" id="rank-of-a-linear-transformation" ebook-toc-level-1 heading="Rank of a linear transformation">Rank of a linear transformation</h1>
+
+<p>Let T:V-&gt;W be a linear transformation, then rank of T is the dimension of range of T</p>
+<p>Let T:V-&gt;W be a linear transformation, then nullity of T is the dimension of Ker T(if it is finite dimensional)</p>
+<h1 class="mume-header" id="rank-theorem-for-linear-transformation" ebook-toc-level-1 heading="Rank theorem for linear transformation">Rank theorem for linear transformation</h1>
+
+<div class="admonition danger">
+<p class="admonition-title">Theorem 3</p>
+<p>Suppose that T:V-&gt;W is a linear transformation and V is finite dimensional, then<br>
+rank(T) + nullity(T) = dim V</p>
+</div>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Theorem3.pdf">Proof</a></p>
+<h1 class="mume-header" id="isomorphism-of-vector-space" ebook-toc-level-1 heading="Isomorphism of Vector Space">Isomorphism of Vector Space</h1>
+
+<p>A linear transformation T:V-&gt;W is said to be an isomorphism if it is injective (one - one) and surjective (onto).</p>
+<p>Two isomorphic vectors are shown as V <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2245;</mo></mrow><annotation encoding="application/x-tex">\cong</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.589em;"></span><span class="mrel">&#x2245;</span></span></span></span> W</p>
+<h2 class="mume-header" id="proposition-27" ebook-toc-level-2 heading="Proposition 27">Proposition 27</h2>
+
+<blockquote>
+<p>Two finite dimensional vector spaces V and W are isomorphic if and only if dim V = dim W</p>
+</blockquote>
+<h1 class="mume-header" id="a-very-important-linear-transformation" ebook-toc-level-1 heading="A very important linear transformation">A very important linear transformation</h1>
+
+<p><strong>Left Multiplication by a matrix:</strong> Let A be a fixed mxn matrix then function T<sub>A</sub>: <em>R<sup>n</sup></em>-&gt;<em>R<sup>n</sup></em> defined by<br>
+T(<strong>x</strong>) = A<strong>x</strong> is a linear transformation</p>
+<p>Nul A = Ker T<sub>A</sub><br>
+Col A = Range T<sub>A</sub></p>
+<h1 class="mume-header" id="coordinate-system" ebook-toc-level-1 heading="Coordinate System">Coordinate System</h1>
+
+<h2 class="mume-header" id="observation-1" ebook-toc-level-2 heading="Observation 1">Observation 1</h2>
+
+<p>Given a basis for a finite dimensional vector space V, we recall that a vector can be expressed in one and only one way as a linear combination of the basis vectors</p>
+<h2 class="mume-header" id="definition-5" ebook-toc-level-2 heading="Definition">Definition</h2>
+
+<p>An ordered basis for a finite-dimensional space V is a finite sequence of vector which is linearly independent and spans V</p>
+<h1 class="mume-header" id="coordinate-mapping" ebook-toc-level-1 heading="Coordinate mapping">Coordinate mapping</h1>
+
+<h2 class="mume-header" id="observation-2" ebook-toc-level-2 heading="Observation 2">Observation 2</h2>
+
+<p>Given a fixed ordered basis B for a finite-dimensional vector space V, we can set up a correspondence between the vectors of V and n-tuple F<sup>n</sup></p>
+<p>We see that coordinate mapping is an isomorphism from an n-dimensional vector space V over a field F to F<sup>n</sup></p>
+<h1 class="mume-header" id="the-matrix-of-a-linear-transformation" ebook-toc-level-1 heading="The matrix of a linear transformation">The matrix of a linear transformation</h1>
+
+<p>Let B = {<strong>v<sub>1</sub>, ..., v<sub>n</sub></strong>} be an ordered basis for V (dim V = n)<br>
+and C = {<strong>w<sub>1</sub>, ..., w<sub>m</sub></strong>} be an ordered basis for W (dim W = m)<br>
+and T:V-&gt;W be a linear transformation</p>
+<p>Express each T<strong>v<sub>i</sub></strong> = A<sub>1i</sub><strong>w<sub>1</sub></strong> + ...+ A<sub>mi</sub><strong>w<sub>m</sub></strong></p>
+<p>We now form the mxn matrix A with the <u>coefficients as columns</u><br>
+<a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Examples/MatrixOfLinearTransformation.pdf">Example</a></p>
+<p>The matrix A is called the matrix of T wrt the basis B and C. <br>
+A = [T]<sub>B-&gt;C</sub><br>
+T(<strong>v</strong>) = A<strong>v</strong></p>
+<h1 class="mume-header" id="change-of-basis" ebook-toc-level-1 heading="Change of Basis">Change of Basis</h1>
+
+<h2 class="mume-header" id="proposition-28" ebook-toc-level-2 heading="Proposition 28">Proposition 28</h2>
+
+<blockquote>
+<p>Let B = {<strong>u<sub>1</sub>, ..., u<sub>n</sub></strong>} and C = {<strong>v<sub>1</sub>, ..., v<sub>n</sub></strong>} be two ordered basis of a vector space V. Then there is an invertible nxn matrix P such that [<strong>x</strong>]<sub>C</sub> = P[<strong>x</strong>]<sub>B</sub></p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop28.pdf">Proof</a></p>
+<h2 class="mume-header" id="finding-change-of-base-matrix" ebook-toc-level-2 heading="Finding change of base matrix">Finding change of base matrix</h2>
+
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Examples/ChangeBaseMatrix.pdf">Example</a></p>
+<h1 class="mume-header" id="similarity-of-matrices" ebook-toc-level-1 heading="Similarity of matrices">Similarity of matrices</h1>
+
+<p>An nxn matrix B is said to be similar to an nxn matrix A if and only if there exist an invertible matrix P such that B = PAP<sup>-1</sup></p>
+<h2 class="mume-header" id="proposition-29" ebook-toc-level-2 heading="Proposition 29">Proposition 29</h2>
+
+<blockquote>
+<p>Similarity of matrices is an equivalent relation on F<sup>nxn</sup>, i.e., the set of nxn matrices with entries from the field F</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop29.pdf">Proof</a></p>
+<h1 class="mume-header" id="effect-of-change-of-basis" ebook-toc-level-1 heading="Effect of change of Basis">Effect of change of Basis</h1>
+
+<h2 class="mume-header" id="proposition-30" ebook-toc-level-2 heading="Proposition 30">Proposition 30</h2>
+
+<blockquote>
+<p>Suppose A and B are the matrices of the linear operator T relative to the ordered bases <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3B1;</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.4306em;"></span><span class="mord mathnormal" style="margin-right:0.0037em;">&#x3B1;</span></span></span></span> and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3B2;</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05278em;">&#x3B2;</span></span></span></span> respectively.<br>
+Then A and B are similar matrices, in fact<br>
+B = PAP<sup>-1</sup>, where P = P<sub>&#x3B1;-&gt;&#x3B2;</sub> is the change of basis matrix</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop30.pdf">Proof</a></p>
+<h1 class="mume-header" id="algebra-of-linear-transformations" ebook-toc-level-1 heading="Algebra of linear transformations">Algebra of linear transformations</h1>
+
+<h2 class="mume-header" id="proposition-31" ebook-toc-level-2 heading="Proposition 31">Proposition 31</h2>
+
+<blockquote>
+<ol>
+<li>The set W<sup>V</sup> is a set of all functions from V to W is a vector space over F</li>
+<li>The set of all linear transformations(i.e. L(V, W)) from V to W is a subspace of W<sup>V</sup></li>
+</ol>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop31.pdf">Proof</a></p>
+<h2 class="mume-header" id="proposition-32" ebook-toc-level-2 heading="Proposition 32">Proposition 32</h2>
+
+<blockquote>
+<p>Let V, W and Z be vector spaces over a field F.<br>
+Let T be a linear transformation from V into W<br>
+And U be a linear transformation from W into Z<br>
+Then the composition function UT from V into Z defined by (UT)(<strong>v</strong>) = U(T(<strong>v</strong>)) for all <strong>v</strong> in V, is a linear transformation from V into Z</p>
+</blockquote>
+<blockquote>
+<p>Product (composition) of two linear operator is also a linear operator</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop32.pdf">Proof</a></p>
+<h1 class="mume-header" id="linear-operator" ebook-toc-level-1 heading="Linear operator">Linear operator</h1>
+
+<p>Linear transformation of a vector space V into itself, i.e., space L(V, V) is a linear operator</p>
+<p>Multiplication of linear operators satisfies:</p>
+<ol>
+<li>IU = UI = U</li>
+<li>(T<sub>1</sub>T<sub>2</sub>)T<sub>3</sub> = T<sub>1</sub>(T<sub>2</sub>T<sub>3</sub>)</li>
+<li>U(T<sub>1</sub> + T<sub>2</sub>) = UT<sub>1</sub> + UT<sub>2</sub></li>
+<li>(T<sub>1</sub> + T<sub>2</sub>)U = T<sub>1</sub>U + T<sub>2</sub>U</li>
+<li>c(UT) = (cU)T = U(cT)</li>
+<li>however this multiplication is not commutative</li>
+</ol>
+<h1 class="mume-header" id="another-fundamental-isomorphism" ebook-toc-level-1 heading="Another fundamental isomorphism">Another fundamental isomorphism</h1>
+
+<h2 class="mume-header" id="proposition-33" ebook-toc-level-2 heading="Proposition 33">Proposition 33</h2>
+
+<blockquote>
+<p>Let V be a n-dimensional vector space over F and<br>
+Let W be an m-dimensional vector space over F.<br>
+Then there is an isomorphism between L(V,W) and F<sup>mxn</sup></p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop33.pdf">Proof</a></p>
+<h2 class="mume-header" id="proposition-34" ebook-toc-level-2 heading="Proposition 34">Proposition 34</h2>
+
+<blockquote>
+<p>If dim V = n and dim W = m, then dim (L(V,W)) = mn</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop34.pdf">Proof</a></p>
+<h2 class="mume-header" id="proposition-35" ebook-toc-level-2 heading="Proposition 35">Proposition 35</h2>
+
+<blockquote>
+<p>Suppose T and U are linear operators on a finite dimensional vector space V and <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3B2;</mi></mrow><annotation encoding="application/x-tex">\beta</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal" style="margin-right:0.05278em;">&#x3B2;</span></span></span></span> to a fixed basis for V.<br>
+Then [UT]<sub>&#x3B2;</sub> = [U]<sub>&#x3B2;</sub> [T]<sub>&#x3B2;</sub></p>
+</blockquote>
+<h2 class="mume-header" id="proposition-35a" ebook-toc-level-2 heading="Proposition 35a">Proposition 35a</h2>
+
+<blockquote>
+<p>The mapping <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3D5;</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">&#x3D5;</span></span></span></span>: L(V,V) -&gt; F<sup>nxn</sup> given by <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3D5;</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">&#x3D5;</span></span></span></span>(T)=[T]<sub>&#x3B2;</sub> is a vector space isomorphism which also preserves product, i.e.,<br>
+<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3D5;</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">&#x3D5;</span></span></span></span>(UT)= <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3D5;</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">&#x3D5;</span></span></span></span>(U)<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3D5;</mi></mrow><annotation encoding="application/x-tex">\phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8889em;vertical-align:-0.1944em;"></span><span class="mord mathnormal">&#x3D5;</span></span></span></span>(T)</p>
+</blockquote>
+<h2 class="mume-header" id="proposition-35b" ebook-toc-level-2 heading="Proposition 35b">Proposition 35b</h2>
+
+<blockquote>
+<p>Suppose that dim V = n, dim W = m, dim Z = k<br>
+UT:V-&gt;Z would be a linear transformation from a space of dimension n to a space of dimension k, i.e., its matrix would be a kxn matrix</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop35.pdf">Proof</a></p>
+<h1 class="mume-header" id="eigenvectors-and-eigenvalues" ebook-toc-level-1 heading="Eigenvectors and Eigenvalues">Eigenvectors and Eigenvalues</h1>
+
+<p>An eigenvector of an nxn matrix A is a non-zero vector <strong>x</strong> such that A<strong>x</strong> = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><strong>x</strong>, for some scalar <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span>.<br>
+The scalar <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span> is called an eigenvalue of A if there is a non-trivial solution of A<strong>x</strong> = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><strong>x</strong> such a vector <strong>x</strong> is called an eigenvector corresponding to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span></p>
+<p>An eigenvector is not unique, since all scalar multiples of an eigenvector are also eigenvectors</p>
+<p>Set of all eigenvectors corresponding to a fixed eigenvalue <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span> of the nxn matrix A together with the zero vector forms a subspace of V=F<sup>n</sup><br>
+X= {<strong>v</strong>: A<strong>v</strong>=<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><strong>v</strong>}<br>
+=&gt; X is a eigenspace of A corresponding to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span></p>
+<h1 class="mume-header" id="fundamental-results-for-eigenvector" ebook-toc-level-1 heading="Fundamental results for Eigenvector">Fundamental results for Eigenvector</h1>
+
+<h2 class="mume-header" id="proposition-36" ebook-toc-level-2 heading="Proposition 36">Proposition 36</h2>
+
+<blockquote>
+<p>If <strong>v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>p</sub></strong> are eigenvectors corresponding to distinct eigenvalues &#x3BB;<sub>1</sub>, ..., &#x3BB;<sub>p</sub> of the matrix A, then the set {<strong>v<sub>1</sub>, v<sub>2</sub>, ..., v<sub>p</sub></strong>} are linearly independent</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop36.pdf">Proof</a></p>
+<h3 class="mume-header" id="corollary-361" ebook-toc-level-3 heading="Corollary 36.1:">Corollary 36.1:</h3>
+
+<p>An nxn matrix A can have at most n distinct eigenvalues</p>
+<h2 class="mume-header" id="proposition-37" ebook-toc-level-2 heading="Proposition 37">Proposition 37</h2>
+
+<blockquote>
+<p>A scalar <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span> is an eigenvalue of an nxn matrix if and only if <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span> satisfies the characteristics equation<br>
+det (A- <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span>I) = 0</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop37.pdf">Proof</a></p>
+<h1 class="mume-header" id="eigenvalues-of-similar-matrices" ebook-toc-level-1 heading="Eigenvalues of similar matrices">Eigenvalues of similar matrices</h1>
+
+<h2 class="mume-header" id="proposition-38" ebook-toc-level-2 heading="Proposition 38">Proposition 38</h2>
+
+<blockquote>
+<p>If the nxn matrices A and B are similar, then they have the same characteristic polynomial, and hence the same eigenvalue with the same multiplicities</p>
+</blockquote>
+<p>However, the eigenvectors are not necessarily the same</p>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop38.pdf">Proof</a></p>
+<h1 class="mume-header" id="cayley-hamilton-theorem" ebook-toc-level-1 heading="Cayley-Hamilton theorem">Cayley-Hamilton theorem</h1>
+
+<p>If p is polynomial given by p(t) = a<sub>0</sub> + a<sub>1</sub>t + ...+ a<sub>m</sub>t<sup>m</sup> and A is a square matrix,<br>
+then p(A) = a<sub>0</sub>I + a<sub>1</sub>A + ...+ a<sub>m</sub>A<sup>m</sup></p>
+<p>The square matrix A is said to satisfy the polynomial p(t) if p(A) = <strong>0</strong>, i.e., the zero matrix</p>
+<div class="admonition danger">
+<p class="admonition-title">Theorem 4</p>
+<p>Let q donate the characteristic polynomial of nxn square matrix A. Then q(A) = <strong>0</strong></p>
+</div>
+<h1 class="mume-header" id="diagonalization-of-matrices" ebook-toc-level-1 heading="Diagonalization of matrices">Diagonalization of matrices</h1>
+
+<p>If A is a diagonal matrix, then its diagonal elements are its eigenvalues and the standard basis vectors are its eigenvectors</p>
+<h3 class="mume-header" id="definition-6" ebook-toc-level-3 heading="Definition">Definition</h3>
+
+<p>An nxn matrix A is said to be diagonalizable if A is similar to a diagonal matrix D,<br>
+in other words A=PDP<sup>-1</sup></p>
+<h2 class="mume-header" id="diagonalization-theorem" ebook-toc-level-2 heading="Diagonalization Theorem">Diagonalization Theorem</h2>
+
+<div class="admonition danger">
+<p class="admonition-title">Theorem 5</p>
+<ol>
+<li>An nxn matrix A is diagonalizable if and only if A has n linearly independent eigenvectors</li>
+<li>In this case, A=PDP<sup>-1</sup>, where the columns of P are linearly independent eigenvectors of A and the diagonal entries of D are eigenvalues corresponding to these eigenvector</li>
+</ol>
+</div>
+<h2 class="mume-header" id="case-1" ebook-toc-level-2 heading="Case 1">Case 1</h2>
+
+<p>An nxn matrix A has n distinct (real) eigenvalues Then we get:</p>
+<h2 class="mume-header" id="proposition-39" ebook-toc-level-2 heading="Proposition 39">Proposition 39</h2>
+
+<blockquote>
+<p>An nxn matrix A with n distinct eigenvalues is diagonalizable</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Examples/Diagonalization1.pdf">Example of case 1</a></p>
+<h3 class="mume-header" id="two-preliminary-definition" ebook-toc-level-3 heading="Two preliminary definition">Two preliminary definition</h3>
+
+<p>Given an eigenvalues <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>1</sub> for a matrix A we define:</p>
+<ul>
+<li>The algebraic multiplicity of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>1</sub> is the power of the factor (<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span>-<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>1</sub>) in the characteristic polynomial of A</li>
+<li>The geometric multiplicity of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>1</sub> is the dimension of the eigenspace corresponding to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>1</sub></li>
+</ul>
+<h2 class="mume-header" id="case-2" ebook-toc-level-2 heading="Case 2">Case 2</h2>
+
+<p>An nxn matrix A has p &lt; n distinct eigenvalues, but counting the (algebraic) multiplicity, there are n real eigenvalues (not distinct)</p>
+<h2 class="mume-header" id="proposition-40" ebook-toc-level-2 heading="Proposition 40">Proposition 40</h2>
+
+<blockquote>
+<p>Let A be an nxn matrix with n(real) eigenvalues (counting algebraic multiplicity) of which <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>1</sub>, ..., <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>p</sub> are distinct (p&lt;n). Then the following holds true:</p>
+<ol>
+<li>For 1&#x2264;k&#x2264;p, the geometric multiplicity of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>k</sub> is less than or equal to the algebraic multiplicity of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>k</sub></li>
+<li>A is diagonalizable, if and only if the geometric multiplicity for each <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>k</sub> equal to its algebraic multiplicity</li>
+<li>If A is diagonalizable and B<sub>k</sub> is a basis for the eigenspace corresponding to <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>k</sub> for each k, then the total collection of vectors in B<sub>1</sub>, ..., B<sub>p</sub> forms an eigenvectors basis for <em>R<sup>n</sup></em></li>
+</ol>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Examples/Diagonalization2.pdf">Example of case 2</a></p>
+<h1 class="mume-header" id="the-determinant-of-a-linear-operator" ebook-toc-level-1 heading="The determinant of a linear operator">The determinant of a linear operator</h1>
+
+<p>Let T:V-&gt;V be a linear operator where V is a vector space of finite dimension n. Let &#x3B1; be any basis for V, and let A be the matrix of T wrt the (ordered) basis &#x3B1;, then det T = det A</p>
+<h1 class="mume-header" id="eigenvalues-of-linear-operators" ebook-toc-level-1 heading="Eigenvalues of Linear operators">Eigenvalues of Linear operators</h1>
+
+<p>An eigenvector of a linear operator T:V-&gt;V is a non zero vector <strong>v</strong> such that T<strong>v</strong>=<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><strong>v</strong> for some scalar <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span>. Such a scalar is called the eigenvalue of the operator</p>
+<h1 class="mume-header" id="inner-product" ebook-toc-level-1 heading="Inner Product">Inner Product</h1>
+
+<p>An inner product on a (real) vector space V is a function, that to each pair of vector <strong>u</strong> and <strong>v</strong> in V associates a scalar (real number) &lt;<strong>u, v</strong>&gt; and satisfies the following axioms for all vectors <strong>u, v, w</strong> in V and all scalars c in <em>R</em></p>
+<ol>
+<li>&lt;<strong>u, v</strong>&gt; = &lt;<strong>v, u</strong>&gt;</li>
+<li>&lt;<strong>u + v, w</strong>&gt; = &lt;<strong>u, w</strong>&gt; + &lt;<strong>v, w</strong>&gt;</li>
+<li>&lt;c<strong>u, v</strong>&gt; = c&lt;<strong>u, v</strong>&gt;</li>
+<li>&lt;<strong>u, u</strong>&gt; &#x2265; 0, &lt;<strong>u, u</strong>&gt; = 0 if and only if <strong>u</strong> = <strong>0</strong></li>
+</ol>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Examples/InnerProduct.pdf">Example</a></p>
+<h1 class="mume-header" id="length-and-distance-in-inner-product-spaces" ebook-toc-level-1 heading="Length and distance in Inner product spaces">Length and distance in Inner product spaces</h1>
+
+<p>The length or norm of any vector <strong>u</strong> in V is the non negative number ||<strong>u</strong>|| = &#x221A;&lt;<strong>u, u</strong>&gt;</p>
+<h1 class="mume-header" id="orthogonality" ebook-toc-level-1 heading="Orthogonality">Orthogonality</h1>
+
+<p>Two vectors <strong>u, v</strong> in V are said to be orthogonal to each other if &lt;<strong>u, v</strong>&gt; = 0; written as <strong>u&#x27C2;v</strong></p>
+<p>A set of vector {<strong>u<sub>1</sub>, ..., u<sub>p</sub></strong>} is said to be orthogonal if any two distinct vectors in the set are orthogonal to each other</p>
+<h2 class="mume-header" id="proposition-41" ebook-toc-level-2 heading="Proposition 41">Proposition 41</h2>
+
+<blockquote>
+<p>An orthogonal set of non zero vectors in V is linearly independent</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop41.pdf">Proof</a></p>
+<h2 class="mume-header" id="definition-7" ebook-toc-level-2 heading="Definition">Definition</h2>
+
+<p>If W is a subspace of V, then a vector <strong>v</strong> is said to be orthogonal to W if <strong>v</strong> is orthogonal to every vector in W.</p>
+<p>The set of all vectors orthogonal to W is called the orthogonal complement of W, written W<sup>&#x27C2;</sup></p>
+<p>W<sup>&#x27C2;</sup> = {<strong>v</strong><span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span>V: <strong>v&#x27C2;w</strong> for every <strong>w</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> W}</p>
+<h2 class="mume-header" id="proposition-42" ebook-toc-level-2 heading="Proposition 42">Proposition 42</h2>
+
+<blockquote>
+<ol>
+<li><strong>v</strong> belongs to W<sup>&#x27C2;</sup> if and only if <strong>v</strong> is orthogonal to every vector in a spanning set for W.</li>
+<li>W<sup>&#x27C2;</sup> is a subspace of V and W&#x2229;W<sup>&#x27C2;</sup> = {<strong>0</strong>}</li>
+</ol>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop42.pdf">Proof</a></p>
+<h1 class="mume-header" id="orthogonal-basis" ebook-toc-level-1 heading="Orthogonal Basis">Orthogonal Basis</h1>
+
+<p>An orthogonal basis for a subspace W is a basis which is also an orthogonal set</p>
+<h2 class="mume-header" id="proposition-43" ebook-toc-level-2 heading="Proposition 43">Proposition 43</h2>
+
+<blockquote>
+<p>Let {<strong>u<sub>1</sub>, ..., u<sub>p</sub></strong>} be an orthogonal basis for a subspace W. Then if <strong>y</strong> = c<sub>1</sub><strong>u<sub>1</sub></strong> + ...+ c<sub>p</sub><strong>u<sub>p</sub></strong> is any vector in W, we have:<br>
+c<sub>j</sub> = &lt;<strong>y, u<sub>j</sub></strong>&gt;/&lt;<strong>u<sub>j</sub>, u<sub>j</sub></strong>&gt;, for j = 1, ..., p</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop43.pdf">Proof</a></p>
+<h1 class="mume-header" id="the-gram-schmidt-process" ebook-toc-level-1 heading="The gram-Schmidt Process">The gram-Schmidt Process</h1>
+
+<div class="admonition danger">
+<p class="admonition-title">Theorem 6</p>
+<p>Given a basis {<strong>x<sub>1</sub>, ..., x<sub>p</sub></strong>} for a subspace W of V, we can generate an orthogonal basis {<strong>v<sub>1</sub>, ..., v<sub>p</sub></strong>} for W such that Span {<strong>v<sub>1</sub>, ..., v<sub>k</sub></strong>} = Span {<strong>x<sub>1</sub>, ..., x<sub>k</sub></strong>} for k = 1, ..., p</p>
+<p><strong>v<sub>1</sub> = x<sub>1</sub></strong><br>
+<strong>v<sub>2</sub> = x<sub>2</sub> - (&lt;x<sub>2</sub>, v<sub>1</sub>&gt;/&lt;v<sub>1</sub>, v<sub>1</sub>&gt;)v<sub>1</sub></strong><br>
+.<br>
+.<br>
+.<br>
+<strong>v<sub>p</sub> = x<sub>p</sub> - (&lt;x<sub>p</sub>, v<sub>1</sub>&gt;/&lt;v<sub>1</sub>, v<sub>1</sub>&gt;)v<sub>1</sub> - ...- (&lt;x<sub>p</sub>, v<sub>p-1</sub>&gt;/&lt;v<sub>p-1</sub>, v<sub>p-1</sub>&gt;)v<sub>p-1</sub></strong></p>
+</div>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Theorem6.pdf">Proof</a></p>
+<h1 class="mume-header" id="orthogonal-decomposition" ebook-toc-level-1 heading="Orthogonal Decomposition">Orthogonal Decomposition</h1>
+
+<div class="admonition danger">
+<p class="admonition-title">Theorem 7</p>
+<p>Let W be any finite dimensional subspace of V.<br>
+Then each vector <strong>y</strong> in V can be written uniquely in the form <strong>y = y<sup>^</sup> + z</strong>, where <strong>y<sup>^</sup></strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> W and <strong>z</strong> <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mo>&#x2208;</mo></mrow><annotation encoding="application/x-tex">\in</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.5782em;vertical-align:-0.0391em;"></span><span class="mrel">&#x2208;</span></span></span></span> W<sup>&#x27C2;</sup></p>
+<p>Given any finite dimensional subspace W of V, then we can express V = W+W<sup>&#x27C2;</sup>, with W&#x2229;W<sup>&#x27C2;</sup> = {<strong>0</strong>},<br>
+i.e., V=W&#x2295;W<sup>&#x27C2;</sup></p>
+</div>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Theorem7.pdf">Proof</a><br>
+<a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Examples/OrthogonalDecomposition.pdf">Example</a></p>
+<h2 class="mume-header" id="proposition-44" ebook-toc-level-2 heading="Proposition 44">Proposition 44</h2>
+
+<h3 class="mume-header" id="pythagorean-theorem" ebook-toc-level-3 heading="Pythagorean Theorem">Pythagorean Theorem</h3>
+
+<blockquote>
+<p><strong>u, v</strong> are orthogonal to each other if and only if<br>
+<strong>||u + v||<sup>2</sup> = ||u||<sup>2</sup> + ||v||<sup>2</sup></strong></p>
+</blockquote>
+<h2 class="mume-header" id="proposition-45" ebook-toc-level-2 heading="Proposition 45">Proposition 45</h2>
+
+<h3 class="mume-header" id="best-approximation-theorem" ebook-toc-level-3 heading="Best approximation theorem">Best approximation theorem</h3>
+
+<blockquote>
+<p>Let W be any finite dimensional subspace of V, <strong>y</strong> be any vector in V, and <strong>y<sup>^</sup></strong> be the orthogonal projection of <strong>y</strong> onto W. Then,<br>
+<strong>||y-y<sup>^</sup>|| &lt; ||y-v||</strong> for all <strong>v</strong> in W distinct from <strong>y<sup>^</sup></strong></p>
+</blockquote>
+<h3 class="mume-header" id="corollary-451" ebook-toc-level-3 heading="Corollary 45.1">Corollary 45.1</h3>
+
+<p>If <strong>y</strong> is any vector and W is a finite dimensional subspace then<br>
+||proj<sub>w</sub> <strong>y</strong>|| &#x2264; ||<strong>y</strong>||</p>
+<h2 class="mume-header" id="proposition-46" ebook-toc-level-2 heading="Proposition 46">Proposition 46</h2>
+
+<h3 class="mume-header" id="the-cauchy-schwarz-inequality" ebook-toc-level-3 heading="The Cauchy Schwarz Inequality">The Cauchy Schwarz Inequality</h3>
+
+<blockquote>
+<p>For all <strong>u, v</strong> in V,<br>
+|&lt;<strong>u, v</strong>&gt;| &#x2264; ||<strong>u</strong>|| ||<strong>v</strong>||</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop46.pdf">Proof</a></p>
+<h2 class="mume-header" id="proposition-47" ebook-toc-level-2 heading="Proposition 47">Proposition 47</h2>
+
+<h3 class="mume-header" id="triangular-inequality" ebook-toc-level-3 heading="Triangular Inequality">Triangular Inequality</h3>
+
+<blockquote>
+<p>For all <strong>u, v</strong> in V,<br>
+||<strong>u + v</strong>|| &#x2264; ||<strong>u</strong>|| + ||<strong>v</strong>||</p>
+</blockquote>
+<h1 class="mume-header" id="diagonalization-of-symmetric-matrices" ebook-toc-level-1 heading="Diagonalization of symmetric matrices">Diagonalization of symmetric matrices</h1>
+
+<h3 class="mume-header" id="definition-8" ebook-toc-level-3 heading="Definition">Definition</h3>
+
+<p>A matrix A is said to be symmetric if A = A<sup>T</sup>.<br>
+A symmetric matrix is necessarily square</p>
+<h2 class="mume-header" id="proposition-48" ebook-toc-level-2 heading="Proposition 48">Proposition 48</h2>
+
+<blockquote>
+<p>If A is symmetric then any two eigenvectors from different eigenspace are orthogonal</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop48.pdf">Proof</a></p>
+<h1 class="mume-header" id="orthogonal-matrices" ebook-toc-level-1 heading="Orthogonal matrices">Orthogonal matrices</h1>
+
+<h3 class="mume-header" id="definition-9" ebook-toc-level-3 heading="Definition">Definition</h3>
+
+<p>A square matrix P is said to be orthogonal if its columns are orthonormal</p>
+<h2 class="mume-header" id="proposition-49" ebook-toc-level-2 heading="Proposition 49">Proposition 49</h2>
+
+<blockquote>
+<p>A orthogonal matrix is necessarily invertible and<br>
+P<sup>-1</sup> = P<sup>T</sup></p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop49.pdf">Proof</a></p>
+<h3 class="mume-header" id="definition-10" ebook-toc-level-3 heading="Definition">Definition</h3>
+
+<p>A square matrix A is said to be orthogonally diagonalizable if there is an orthogonal matrix P and diagonal matrix D such that<br>
+A = PDP<sup>-1</sup> = PDP<sup>T</sup></p>
+<h2 class="mume-header" id="proposition-50" ebook-toc-level-2 heading="Proposition 50">Proposition 50</h2>
+
+<blockquote>
+<p>If an nxn matrix A is orthogonally diagonalizable, then A is symmetric</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop50.pdf">Proof</a></p>
+<h3 class="mume-header" id="definition-11" ebook-toc-level-3 heading="Definition">Definition</h3>
+
+<p>The set of eigenvalues of a matrix A is called the spectrum of A</p>
+<h1 class="mume-header" id="spectral-theorem-for-symmetric-matrices" ebook-toc-level-1 heading="Spectral theorem for symmetric matrices">Spectral theorem for symmetric matrices</h1>
+
+<div class="admonition danger">
+<p class="admonition-title">Theorem 8</p>
+<p>An nxn symmetric matrix A has the following properties:</p>
+<ol>
+<li>The eigenspace are mutually orthogonal</li>
+<li>A has n real eigenvalues, counting (algebraic) multiplicities</li>
+<li>A is orthogonally diagonalizable</li>
+<li>The dimension of the eigenspace for each eigenvalue of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span> equals the multiplicity of <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span>, i.e., geometric multiplicity is equal to algebraic multiplicity</li>
+</ol>
+</div>
+<h2 class="mume-header" id="corollary-t81" ebook-toc-level-2 heading="Corollary T8.1">Corollary T8.1</h2>
+
+<p>A is orthogonally diagonalizable if and only if A is symmetric</p>
+<h1 class="mume-header" id="singular-value-decomposition" ebook-toc-level-1 heading="Singular Value Decomposition">Singular Value Decomposition</h1>
+
+<h3 class="mume-header" id="observation-1-1" ebook-toc-level-3 heading="Observation 1">Observation 1</h3>
+
+<p>Let A be an mxn matrix. Then A<sup>T</sup>A, being a symmetric nxn matrix, can be orthogonally diagonalizable.</p>
+<p>Let {<strong>v<sub>1</sub>, ..., v<sub>n</sub></strong>} be an orthonormal basis for <em>R<sup>n</sup></em> consisting of eigenvectors of A<sup>T</sup>A with corresponding eigenvalues <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>1</sub>, ..., <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>n</sub>. Then:<br>
+||A<strong>v<sub>i</sub></strong>||<sup>2</sup> = <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>i</sub></p>
+<p>=&gt; all eigenvalues of matrix A<sup>T</sup>A are non-negative<br>
+=&gt; Eigenvalues can be rearranged so that: <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>1</sub> &#x2265; ...&#x2265; <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>n</sub> &#x2265; 0</p>
+<h2 class="mume-header" id="proposition-51" ebook-toc-level-2 heading="Proposition 51">Proposition 51</h2>
+
+<blockquote>
+<p>Suppose that {<strong>v<sub>1</sub>, ..., v<sub>n</sub></strong>} is an orthonormal basis for <em>R<sup>n</sup></em> consisting of eigenvectors of A<sup>T</sup>A with corresponding eigenvalues arranged so that <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>1</sub> &#x2265; ...&#x2265; <span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>n</sub> &#x2265; 0.<br>
+Suppose that A has r nonzero singular values then {A<strong>v<sub>1</sub></strong>, ..., A<strong>v<sub>r</sub></strong>} is an orthogonal basis for Col A and rank A = r</p>
+</blockquote>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Prop51.pdf">Proof</a></p>
+<h3 class="mume-header" id="definition-12" ebook-toc-level-3 heading="Definition">Definition</h3>
+
+<p>Let A be a mxn matrix.<br>
+The singular values of A are the square roots of the eigenvalues of A<sup>T</sup>A, denoted by &#x3C3;<sub>1</sub>, &#x3C3;<sub>2</sub>, ..., &#x3C3;<sub>n</sub> arranged in descending order, i.e., &#x3C3;<sub>i</sub> = &#x221A;<span class="katex"><span class="katex-mathml"><math xmlns="http://www.w3.org/1998/Math/MathML"><semantics><mrow><mi>&#x3BB;</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.6944em;"></span><span class="mord mathnormal">&#x3BB;</span></span></span></span><sub>i</sub> for i = 1, ..., n</p>
+<p><strong>Note</strong>: The singular values are lengths of the vectors A<strong>v<sub>1</sub></strong>, A<strong>v<sub>2</sub></strong>, ..., A<strong>v<sub>n</sub></strong></p>
+<div class="admonition danger">
+<p class="admonition-title">Theorem 9</p>
+<p>Let A be a mxn matrix with rank r. Then A can be factored as a product<br>
+A<sub>mxn</sub> = U<sub>mxm</sub> &#x3A3;<sub>mxn</sub> V<sub>nxn</sub><sup>T</sup></p>
+<p>&#x3A3; is an mxn matrix consisting an rxr diagonal matrix D with the r non-zero singular values of A,<br>
+&#x3C3;<sub>1</sub> &#x2265; ...&#x2265; &#x3C3;<sub>r</sub> &#x2265; 0, along the main diagonal.<br>
+D is places in the upper left hand side corner of &#x3A3;. Remaining entries of &#x3A3; are zero.</p>
+<p>U is an mxm orthogonal matrix and V is an nxn orthogonal matrix</p>
+<ol>
+<li>The matrix V has as it columns the orthogonal basis {<strong>v<sub>1</sub>, ..., v<sub>n</sub></strong>} of the eigenvectors of A<sup>T</sup>A</li>
+<li>In order to obtain U, we take the r vectors A<strong>v<sub>i</sub></strong> corresponding to the non zero singular values, extend then to an orthogonal basis of <em>R<sup>m</sup></em> using the gram Schmidt Process and finally normalize the vectors to obtain an orthogonal basis {<strong>u<sub>1</sub>, ..., u<sub>m</sub></strong>}. U has the vectors <strong>u<sub>i</sub></strong> as the columns.</li>
+</ol>
+</div>
+<p><a href="file:///Volumes/GoogleDrive/My Drive/Archive/MTH100(LA)/Proofs/Examples/SingularValueDecomposition.pdf">Example</a></p>
+<hr class="footnotes-sep">
+<section class="footnotes">
+<ol class="footnotes-list">
+<li id="fn1" class="footnote-item"><p>If any condition is satisfied, then all conditions are satisfied <a href="#fnref1" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+<li id="fn2" class="footnote-item"><p>Note that this is a negative definition; nothing is said about the existence of the basis <a href="#fnref2" class="footnote-backref">&#x21A9;&#xFE0E;</a></p>
+</li>
+</ol>
+</section>
+</div></body></html>
+    </div>
+  </body>
+</html>

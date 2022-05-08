@@ -15,8 +15,11 @@ This is the Repository for my notes and some resources that I used for each seme
 * [Python Tutor](https://pythontutor.com)
 
 ### Linear Algebra (MTH100)
-**My Notes:** [LA_Notes](Sem1/LA/Propositions.pdf)
+**My Notes:** [LA_Notes](Sem1/LA/Propositions.html)
 > Also download the [Proofs folder](Sem1/LA/Proofs/) and keep it in the same directory as the Notes .pdf since the notes contains some links that will open files from that folder like proof of the propositions and theorems
+
+
+> [Download](Sem1/LA/Notes.zip) the .zip file to get the whole thing
 
 **My Tutorials:** [Tutorials](Sem1/LA/Tuts/)\
 **Book:** [Linear Algebra and its applications](Sem1/LA/LinearAlgebra.pdf)\
