@@ -37,7 +37,8 @@ This is the Repository for my notes and some resources that I used for each seme
 * [Neso Academy](https://youtube.com/playlist?list=PLBlnK6fEyqRjMH3mWf6kwqiTbT798eAOm)
 
 ## Introduction to Human Computer Interaction (DES102)
-**My Project:** [HelpDesk](https://github.com/arorashivoy/HelpDesk)
-**Book:** [Interactive Design](Sem1/IHCI/Interactive%20Design.pdf)
+**My Project:** [HelpDesk](https://github.com/arorashivoy/HelpDesk)\
+**Book:** [Interactive Design](Sem1/IHCI/Interactive%20Design.pdf)\
 **Sir's Slides:** [Slides](Sem1/IHCI/Slides.pdf)
 
+# Sem 2
