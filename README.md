@@ -14,6 +14,9 @@ This is the Repository for my notes and some resources that I used for each seme
 * [Code with Harry](https://www.youtube.com/playlist?list=PLu0W_9lII9agICnT8t4iYVSZ3eykIAOME)
 * [Python Tutor](https://pythontutor.com)
 
+#### My Notes
+[<img src="img/Download.gif" width=80 alt="Download">](Sem1/IP/IP_Notes.pdf)
+
 ### Linear Algebra (MTH100)
 **My Notes:** [LA_Notes](Sem1/LA/Propositions.pdf)
 > Also download the [Proofs folder](Sem1/LA/Proofs/) and keep it in the same directory as Notes file since the notes contains some links that will open files from that folder like proof of the propositions and theorems
