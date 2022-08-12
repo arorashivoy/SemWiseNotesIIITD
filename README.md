@@ -7,7 +7,7 @@ This is the Repository for my notes and some resources that I used for each seme
 ## Introduction to Programming (CSE101)
 
 ### My Notes
-[<img src="img/Download.gif" width=80 alt="Download">](Sem1/IP/IP_Notes.pdf)
+[<img src="img/Download.gif" width=80 alt="Download">](Sem1/IP/IP_Notes.pdf)\
 **Assignments:** [Assignments](Sem1/IP/Assignment/)\
 **Book:** [Intro To computation](sem1/IP/Introduction%20to%20Computation%20and%20Programming%20Using%20Python.pdf)
 
