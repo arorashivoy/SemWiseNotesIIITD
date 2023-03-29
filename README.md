@@ -29,7 +29,7 @@ This is the Repository for my notes and some resources that I used for each seme
 
 ## Digital Circuits (ECE111)
 **My Tutorial:** [Tutorials](Sem1/DC/Tuts/)\
-**My Labs:** [Labs](sem1/DC/Labs/)\
+**My Labs:** [Labs](Sem1/DC/Labs/)\
 **Practice Problems:** [Problems](Sem1/DC/Practice/)\
 **Book:** [Digital Design](Sem1/DC/DigitalDesign.pdf)
 
@@ -42,3 +42,11 @@ This is the Repository for my notes and some resources that I used for each seme
 **Sir's Slides:** [Slides](Sem1/IHCI/Slides.pdf)
 
 # Sem 2
+
+## DSA (CSE102)
+### My Notes
+[<img src="img/Download.gif" width=80 alt="Download">](Sem2/DSA/Lectures.pdf)
+**My Assignments:** [Assignments](Sem2/DSA/CSE102(DSA)/Assignment/)
+**My Labs:** [Labs](Sem2/DSA/CSE102(DSA)/Labs/)
+
+

@@ -1,0 +1,8 @@
+{
+    "files.associations": {
+        "*.txt": "plaintext",
+        "atomic": "c",
+        "concepts": "c",
+        "utility": "c"
+    }
+}
